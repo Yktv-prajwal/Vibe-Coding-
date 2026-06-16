@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prajwal Kumbhar - AI & Machine Learning Student Portfolio. Exploring Data Science, Python, SQL, and Deep Learning.">
+    <title>Prajwal Kumbhar | AI & ML Student Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Letter Glitch Background -->
+    <div id="letter-glitch-container">
+        <canvas id="letter-glitch-canvas"></canvas>
+        <div class="center-vignette"></div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span>Prajwal</span> <span class="logo-accent">Kumbhar</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-toggle-icon"></i>
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="hamburger-menu" aria-label="Toggle mobile menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Welcome to my universe</span>
+                    <h1 class="hero-title">Hi, I'm <span class="gradient-text">Prajwal Kumbhar</span></h1>
+                    <h2 class="hero-typing">I am a <span class="typing-text" id="typing-text"></span><span class="typed-cursor">|</span></h2>
+                    <p class="hero-description">
+                        An aspiring AI & Machine Learning student from India, passionate about turning complex datasets into intelligent models and crafting cutting-edge technical solutions.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" id="btn-hero-contact">
+                            Get In Touch <i class="fas fa-paper-plane"></i>
+                        </a>
+                        <a href="resume.pdf" download="Prajwal_Kumbhar_Resume.pdf" class="btn btn-secondary" id="btn-hero-resume">
+                            Download CV <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/Yktv-prajwal" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/prajwal-kumbhar-2b949a398/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:prajwalkumbhar28@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-container">
+                        <img src="assets/profile.png" alt="Prajwal Kumbhar Profile Avatar" class="hero-profile-img">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about" aria-label="Scroll down">
+                    <span class="mouse-icon">
+                        <span class="mouse-wheel"></span>
+                    </span>
+                    <span class="arrow-down-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Get to Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-details">
+                        <h3 class="about-heading">Fascinated by the power of Artificial Intelligence</h3>
+                        <p class="about-text">
+                            I am an enthusiastic AI & Machine Learning student currently based in India. My journey into tech is driven by an insatiable curiosity about how data can be leveraged to build intelligent agents, predictive engines, and automate complex workflows.
+                        </p>
+                        <p class="about-text">
+                            I specialize in writing clean Python code, structuring database queries using SQL, analyzing trends with Data Science methodologies, and training Machine Learning algorithms. I believe that AI is not just about writing algorithms, but about creating meaningful, user-centric solutions that make a real difference in the world.
+                        </p>
+                        <div class="personal-info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Location:</span>
+                                <span class="info-value">India</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Study:</span>
+                                <span class="info-value">Artificial Intelligence & ML</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value">prajwalkumbhar28@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Freelance:</span>
+                                <span class="info-value text-accent">Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4 class="stat-title">AI & ML</h4>
+                            <p class="stat-desc">Fascinated by neural networks, statistical modeling, and deep learning algorithms.</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="stat-title">Data Analytics</h4>
+                            <p class="stat-desc">Extracting valuable insights from raw data to support strategic decision making.</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon-wrapper">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <h4 class="stat-title">Python Developer</h4>
+                            <p class="stat-desc">Writing clean Python, crafting database structures, and building responsive UI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="skills-bg-glow"></div>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Capabilities</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Python Skill Card -->
+                    <div class="skill-card scroll-reveal" data-skill="90" data-delay="0">
+                        <div class="skill-info">
+                            <div class="skill-icon-name">
+                                <div class="skill-icon-bg color-python">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill color-python" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning Skill Card -->
+                    <div class="skill-card scroll-reveal" data-skill="85" data-delay="100">
+                        <div class="skill-info">
+                            <div class="skill-icon-name">
+                                <div class="skill-icon-bg color-ml">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <span class="skill-name">Machine Learning</span>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill color-ml" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- SQL Skill Card -->
+                    <div class="skill-card scroll-reveal" data-skill="80" data-delay="200">
+                        <div class="skill-info">
+                            <div class="skill-icon-name">
+                                <div class="skill-icon-bg color-sql">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span class="skill-name">SQL</span>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill color-sql" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analysis Skill Card -->
+                    <div class="skill-card scroll-reveal" data-skill="80" data-delay="300">
+                        <div class="skill-info">
+                            <div class="skill-icon-name">
+                                <div class="skill-icon-bg color-data">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <span class="skill-name">Data Analysis</span>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill color-data" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript Skill Card -->
+                    <div class="skill-card scroll-reveal" data-skill="70" data-delay="400">
+                        <div class="skill-info">
+                            <div class="skill-icon-name">
+                                <div class="skill-icon-bg color-js">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill color-js" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- HTML Skill Card -->
+                    <div class="skill-card scroll-reveal" data-skill="85" data-delay="500">
+                        <div class="skill-info">
+                            <div class="skill-icon-name">
+                                <div class="skill-icon-bg color-html">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span class="skill-name">HTML</span>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill color-html" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS Skill Card -->
+                    <div class="skill-card scroll-reveal" data-skill="75" data-delay="600">
+                        <div class="skill-info">
+                            <div class="skill-icon-name">
+                                <div class="skill-icon-bg color-css">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span class="skill-name">CSS</span>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill color-css" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Excel Skill Card -->
+                    <div class="skill-card scroll-reveal" data-skill="75" data-delay="700">
+                        <div class="skill-info">
+                            <div class="skill-icon-name">
+                                <div class="skill-icon-bg color-excel">
+                                    <i class="far fa-file-excel"></i>
+                                </div>
+                                <span class="skill-name">Excel</span>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill color-excel" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Creative Work</span>
+                    <h2 class="section-title">Projects Gallery</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <!-- Project Filter Controls -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="data">Data Science</button>
+                    <button class="filter-btn" data-filter="web">Web Dev & AI</button>
+                </div>
+
+                <!-- Projects Grid / Gallery -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1 (ML) -->
+                    <div class="project-card" data-category="ml">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project1.png" alt="Machine Learning Predictive Model Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-buttons">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <button class="overlay-btn view-gallery-btn" aria-label="View Image Large" data-img-src="assets/project1.png" data-img-title="Predictive ML Model Dashboard">
+                                        <i class="fas fa-expand-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Machine Learning</span>
+                            <h3 class="project-title">Credit Risk Assessment using ML</h3>
+                            <p class="project-desc">
+                                An end-to-end classification system using Random Forest and XGBoost to predict the probability of loan default. Outperforms baseline methods by 12%.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Scikit-Learn</span>
+                                <span>XGBoost</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (Data Science) -->
+                    <div class="project-card" data-category="data">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project2.png" alt="Data Science Dashboard Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-buttons">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <button class="overlay-btn view-gallery-btn" aria-label="View Image Large" data-img-src="assets/project2.png" data-img-title="Sales Analytics & Insight Tool">
+                                        <i class="fas fa-expand-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Data Science</span>
+                            <h3 class="project-title">Sales Performance Analytics Dashboard</h3>
+                            <p class="project-desc">
+                                Built an interactive analytics tool extracting data via SQL and creating interactive visual analytics to uncover key sales trends, customer segments, and seasonal anomalies.
+                            </p>
+                            <div class="project-tags">
+                                <span>SQL</span>
+                                <span>Pandas</span>
+                                <span>Plotly</span>
+                                <span>Excel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (Web Dev & AI) -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project3.png" alt="AI Chatbot Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-buttons">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" aria-label="GitHub Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <button class="overlay-btn view-gallery-btn" aria-label="View Image Large" data-img-src="assets/project3.png" data-img-title="AI Assistant & Chatbot Interface">
+                                        <i class="fas fa-expand-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Web Dev & AI</span>
+                            <h3 class="project-title">AI Assistant Chat Interface</h3>
+                            <p class="project-desc">
+                                Responsive web-based chat application integrated with an AI LLM API. Features secure prompt handling, conversation memory, and clean UI animations.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="education-bg-glow"></div>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Academic Journey</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Education Item 1 -->
+                    <div class="timeline-item scroll-reveal" id="edu-card-1" data-delay="0">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - 2028</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Bachelor of Engineering (B.E.)</h3>
+                            <h4 class="timeline-sub">Artificial Intelligence & Machine Learning</h4>
+                            <p class="timeline-institution"><i class="fas fa-university"></i> Mumbai University, India</p>
+                            <p class="timeline-desc">Focusing on algorithms, artificial intelligence foundations, deep learning structures, database management, and statistics. Currently maintaining an 8.5 CGPA.</p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="timeline-item scroll-reveal" id="edu-card-2" data-delay="100">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - 2024</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Higher Secondary Certificate (HSC)</h3>
+                            <h4 class="timeline-sub">Science & Mathematics</h4>
+                            <p class="timeline-institution"><i class="fas fa-school"></i> PVP Sainik School, Ahmednagar, India</p>
+                            <p class="timeline-desc">Studied core sciences (Physics, Chemistry, Mathematics) and computer basics. Secured 65% in the final board examinations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 3 -->
+                    <div class="timeline-item scroll-reveal" id="edu-card-3" data-delay="200">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 - 2021</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+                            <h4 class="timeline-sub">General Science & Mathematics</h4>
+                            <p class="timeline-institution"><i class="fas fa-school"></i> Creative Science Academy, India</p>
+                            <p class="timeline-desc">Completed secondary high school education. Secured 91.80% in the final board examinations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Credential Showcase</span>
+                    <h2 class="section-title">Certificates</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="certificates-grid">
+                    <!-- Certificate 1 -->
+                    <a href="assets/certificates/what_is_generative_ai.pdf" download="Prajwal_Kumbhar_What_Is_Generative_AI.pdf" class="certificate-card scroll-reveal" data-delay="0">
+                        <div class="certificate-badge"><i class="fas fa-award"></i></div>
+                        <div class="certificate-info">
+                            <span class="cert-date">April 02, 2026</span>
+                            <h3 class="cert-title">What Is Generative AI?</h3>
+                            <p class="cert-issuer"><i class="fas fa-certificate"></i> LinkedIn Learning</p>
+                            <p class="cert-desc">Covered generative AI tools, prompt mechanics, search engines, and ethical AI development.</p>
+                            <span class="cert-download-link"><i class="fas fa-download"></i> Download PDF</span>
+                        </div>
+                    </a>
+
+                    <!-- Certificate 2 -->
+                    <a href="assets/certificates/critical_thinking_ai_era.pdf" download="Prajwal_Kumbhar_Critical_Thinking_in_the_AI_Era.pdf" class="certificate-card scroll-reveal" data-delay="100">
+                        <div class="certificate-badge"><i class="fas fa-award"></i></div>
+                        <div class="certificate-info">
+                            <span class="cert-date">March 28, 2026</span>
+                            <h3 class="cert-title">Critical Thinking in the AI Era</h3>
+                            <p class="cert-issuer"><i class="fas fa-certificate"></i> HP LIFE & HP Foundation</p>
+                            <p class="cert-desc">Learned how to detect AI-distorted truths, combat algorithmic bias, and fact-check information.</p>
+                            <span class="cert-download-link"><i class="fas fa-download"></i> Download PDF</span>
+                        </div>
+                    </a>
+
+                    <!-- Certificate 3 -->
+                    <a href="assets/certificates/communication_skills.pdf" download="Prajwal_Kumbhar_Communication_Skills.pdf" class="certificate-card scroll-reveal" data-delay="200">
+                        <div class="certificate-badge"><i class="fas fa-award"></i></div>
+                        <div class="certificate-info">
+                            <span class="cert-date">March 04, 2026</span>
+                            <h3 class="cert-title">Communication Skills</h3>
+                            <p class="cert-issuer"><i class="fas fa-certificate"></i> TCS iON (Tata Consultancy Services)</p>
+                            <p class="cert-desc">Focused on barriers to communication, active listening, non-verbal cues, and professional writing.</p>
+                            <span class="cert-download-link"><i class="fas fa-download"></i> Download PDF</span>
+                        </div>
+                    </a>
+
+                    <!-- Certificate 4 -->
+                    <a href="assets/certificates/prompt_engineering_github_copilot.pdf" download="Prajwal_Kumbhar_Prompt_Engineering_GitHub_Copilot.pdf" class="certificate-card scroll-reveal" data-delay="300">
+                        <div class="certificate-badge"><i class="fas fa-award"></i></div>
+                        <div class="certificate-info">
+                            <span class="cert-date">November 08, 2025</span>
+                            <h3 class="cert-title">Prompt Engineering with Copilot</h3>
+                            <p class="cert-issuer"><i class="fas fa-certificate"></i> Microsoft & Simplilearn SkillUp</p>
+                            <p class="cert-desc">Mastered prompt construction, zero/few-shot learning, and code generation with GitHub Copilot.</p>
+                            <span class="cert-download-link"><i class="fas fa-download"></i> Download PDF</span>
+                        </div>
+                    </a>
+
+                    <!-- Certificate 5 -->
+                    <a href="assets/certificates/introduction_to_generative_ai.pdf" download="Prajwal_Kumbhar_Introduction_to_Generative_AI.pdf" class="certificate-card scroll-reveal" data-delay="400">
+                        <div class="certificate-badge"><i class="fas fa-award"></i></div>
+                        <div class="certificate-info">
+                            <span class="cert-date">November 08, 2025</span>
+                            <h3 class="cert-title">Introduction to Generative AI</h3>
+                            <p class="cert-issuer"><i class="fas fa-certificate"></i> Google Cloud & Simplilearn SkillUp</p>
+                            <p class="cert-desc">Covered deep learning, Large Language Models (LLMs), and standard image generation systems.</p>
+                            <span class="cert-download-link"><i class="fas fa-download"></i> Download PDF</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="contact-bg-glow"></div>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information Cards -->
+                    <div class="contact-info">
+                        <div class="contact-info-card">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-card-content">
+                                <h3>Email Me</h3>
+                                <p><a href="mailto:prajwalkumbhar28@gmail.com">prajwalkumbhar28@gmail.com</a></p>
+                                <span class="card-status">Response in 24 Hours</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="contact-card-content">
+                                <h3>LinkedIn</h3>
+                                <p><a href="https://www.linkedin.com/in/prajwal-kumbhar-2b949a398/" target="_blank" rel="noopener noreferrer">prajwal-kumbhar-2b949a398</a></p>
+                                <span class="card-status">Active Daily</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <div class="contact-card-content">
+                                <h3>GitHub</h3>
+                                <p><a href="https://github.com/Yktv-prajwal" target="_blank" rel="noopener noreferrer">Yktv-prajwal</a></p>
+                                <span class="card-status">My Repositories</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                                    <span class="form-error-msg" id="name-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                                    <span class="form-error-msg" id="email-error"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject" placeholder="Project collaboration request">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message <span class="required">*</span></label>
+                                    <textarea id="form-message" name="message" rows="5" placeholder="Hi Prajwal, I would love to collaborate with you on..." required></textarea>
+                                    <span class="form-error-msg" id="message-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="btn-submit-form">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <div class="form-success-box" id="form-success-box">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Thank you! Your message has been sent successfully.</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span>Prajwal</span> <span class="logo-accent">Kumbhar</span>
+                </a>
+                <p>Aspiring AI & Machine Learning engineer passionate about training intelligent models, digging data, and building clean web interfaces.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-socials-col">
+                <h3>Let's Connect</h3>
+                <div class="footer-icons">
+                    <a href="https://github.com/Yktv-prajwal" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/prajwal-kumbhar-2b949a398/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:prajwalkumbhar28@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-location"><i class="fas fa-map-marker-alt text-accent"></i> India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2026</span> Prajwal Kumbhar. All Rights Reserved. Built with <i class="fas fa-heart text-accent"></i></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Image Gallery Modal -->
+    <div class="gallery-modal" id="gallery-modal">
+        <span class="gallery-close" id="gallery-close">&times;</span>
+        <div class="gallery-content-wrapper">
+            <img class="gallery-content-img" id="gallery-img" src="" alt="">
+            <div id="gallery-caption" class="gallery-caption"></div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
