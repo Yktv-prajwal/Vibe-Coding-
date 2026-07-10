@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shivgiri Resort, Silvassa - Discover nature-inspired ultra-luxury. Experience premium accommodations, a multi-cuisine restaurant, event lawns, a swimming pool, and serene escapes in Dadra & Nagar Haveli.">
+    <meta name="keywords" content="Shivgiri Resort, Shivgiri Resort Silvassa, Luxury resort Silvassa, Hotels in Khanvel, Dhudhni Lake, Nature retreat DNH, Premium family resort, Khanvel Khutli Road">
+    <meta name="author" content="Shivgiri Resort">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shivgiriresort.com/">
+    <meta property="og:title" content="Shivgiri Resort | Nature-Inspired Luxury in Silvassa">
+    <meta property="og:description" content="Escape to nature, stay in luxury. Well-appointed premium rooms, fine dining, swimming pool, and corporate event spaces. Book your ultimate getaway.">
+    <meta property="og:image" content="https://shivgiriresort.com/images/slider/S20.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shivgiriresort.com/">
+    <meta property="twitter:title" content="Shivgiri Resort | Nature-Inspired Luxury in Silvassa">
+    <meta property="twitter:description" content="Escape to nature, stay in luxury. Well-appointed premium rooms, fine dining, swimming pool, and corporate event spaces. Book your ultimate getaway.">
+    <meta property="twitter:image" content="https://shivgiriresort.com/images/slider/S20.jpg">
+
+    <title>Shivgiri Resort | Luxury Resort in Silvassa, Khanvel</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://shivgiriresort.com/images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Luxury Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <!-- Luxury Page Loader -->
+    <div class="luxury-loader" id="pageLoader">
+        <div class="loader-content">
+            <h1 class="loader-brand">SHIVGIRI</h1>
+            <p class="loader-subtitle">RESORT & SPA</p>
+            <div class="loader-line-container">
+                <div class="loader-line"></div>
+            </div>
+            <p class="loader-status">Entering Tranquility...</p>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="luxury-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="#home" class="logo-area magnetic" aria-label="Shivgiri Resort Logo">
+                <img src="https://shivgiriresort.com/images/shivgiri.png" alt="Shivgiri Resort Logo" class="nav-logo">
+                <span class="logo-text">SHIVGIRI<small>RESORT</small></span>
+            </a>
+            <div class="nav-menu-btn" id="menuBtn" aria-label="Toggle Menu" role="button" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#accommodation" class="nav-link">Rooms</a></li>
+                <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                <li><a href="#dining" class="nav-link">Dining</a></li>
+                <li><a href="#experiences" class="nav-link">Experiences</a></li>
+                <li><a href="#activities" class="nav-link">Activities</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#booking" class="btn-gold nav-booking-btn magnetic">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <!-- WebGL / Canvas Background for light rays, floating leaves, fog -->
+            <canvas id="heroCanvas" class="hero-canvas"></canvas>
+
+            <div class="hero-slider-container">
+                <!-- Slideshow of real images -->
+                <div class="hero-slide active" style="background-image: linear-gradient(rgba(26, 77, 58, 0.45), rgba(26, 77, 58, 0.65)), url('https://shivgiriresort.com/images/slider/S20.jpg');"></div>
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(26, 77, 58, 0.45), rgba(26, 77, 58, 0.65)), url('https://shivgiriresort.com/images/slider/s0.jpg');"></div>
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(26, 77, 58, 0.45), rgba(26, 77, 58, 0.65)), url('https://shivgiriresort.com/images/slider/05.jpg');"></div>
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(26, 77, 58, 0.45), rgba(26, 77, 58, 0.65)), url('https://shivgiriresort.com/images/slider/slider04.jpg');"></div>
+                <div class="hero-slide" style="background-image: linear-gradient(rgba(26, 77, 58, 0.45), rgba(26, 77, 58, 0.65)), url('https://shivgiriresort.com/images/slider/S07%201.jpg');"></div>
+            </div>
+
+            <!-- Floating Particles Container -->
+            <div class="hero-particles" id="particles"></div>
+
+            <div class="hero-content">
+                <div class="hero-text-wrapper">
+                    <span class="hero-tagline animate-text">NATURE-INSPIRED SANCTUARY</span>
+                    <h1 class="hero-title reveal-text">Discover Luxury <br>in the <span class="accent-text">Heart of Nature</span></h1>
+                    <p class="hero-desc">Escape into lush greenery, premium accommodations, delicious cuisine, and unforgettable experiences at SHIVGIRI RESORT, Silvassa.</p>
+                    <div class="hero-cta">
+                        <a href="#booking" class="btn-gold magnetic">Book Your Stay</a>
+                        <a href="#about" class="btn-outline magnetic">Explore Resort</a>
+                    </div>
+                </div>
+
+                <!-- Glassmorphism Booking Card -->
+                <div class="hero-booking-card animate-up">
+                    <form id="heroBookingForm" action="#booking">
+                        <div class="booking-grid">
+                            <div class="booking-field">
+                                <label for="heroCheckIn"><i class="fa-regular fa-calendar-days text-gold"></i> Check In</label>
+                                <input type="date" id="heroCheckIn" required>
+                            </div>
+                            <div class="booking-field">
+                                <label for="heroCheckOut"><i class="fa-regular fa-calendar-days text-gold"></i> Check Out</label>
+                                <input type="date" id="heroCheckOut" required>
+                            </div>
+                            <div class="booking-field">
+                                <label for="heroGuests"><i class="fa-solid fa-users text-gold"></i> Guests</label>
+                                <select id="heroGuests">
+                                    <option value="1">1 Adult</option>
+                                    <option value="2" selected>2 Adults</option>
+                                    <option value="3">3 Adults</option>
+                                    <option value="4">4 Adults</option>
+                                    <option value="family">Family (2A + 2C)</option>
+                                </select>
+                            </div>
+                            <div class="booking-field button-field">
+                                <button type="submit" class="btn-gold w-full text-center">Check Availability</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll To Explore</span>
+                <div class="scroll-mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <!-- Organic Curved Wave Divider -->
+            <div class="wave-divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-images-wrapper reveal-left">
+                        <div class="about-main-img-holder">
+                            <img src="https://shivgiriresort.com/images/main.jpg" alt="Shivgiri Resort Sanctuary Overview" class="about-main-img parallax-img">
+                        </div>
+                        <div class="about-overlay-card glass-card">
+                            <i class="fa-solid fa-hotel text-gold font-lg"></i>
+                            <h4>Nature's Haven</h4>
+                            <p>Spread across 5 acres of green wilderness</p>
+                        </div>
+                    </div>
+                    <div class="about-text reveal-right">
+                        <span class="section-subtitle">THE SHIVGIRI EXPERIENCE</span>
+                        <h2 class="section-title">Where Serenity Meets Luxury</h2>
+                        <p class="about-para">Tucked away in the tranquil landscape of Khanvel, Silvassa, <strong>SHIVGIRI RESORT</strong> offers a seamless integration of pristine nature and luxury hospitality. Surrounded by towering trees, manicured gardens, and the gentle breeze of the region, our resort is designed to be your private sanctuary.</p>
+                        <p class="about-para">Whether you are planning a relaxing weekend getaway, seeking a rejuvenating spa experience, or hosting a grand celebration, our world-class amenities and deeply personalized service ensure your stay is nothing short of exceptional.</p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item"><i class="fa-solid fa-leaf text-gold"></i> Peaceful Nature</div>
+                            <div class="highlight-item"><i class="fa-solid fa-people-roof text-gold"></i> Family-Friendly</div>
+                            <div class="highlight-item"><i class="fa-solid fa-water-ladder text-gold"></i> Swimming Pool</div>
+                            <div class="highlight-item"><i class="fa-solid fa-champagne-glasses text-gold"></i> Event Spaces</div>
+                            <div class="highlight-item"><i class="fa-solid fa-bed text-gold"></i> Comfortable Rooms</div>
+                            <div class="highlight-item"><i class="fa-solid fa-utensils text-gold"></i> Fine Dining</div>
+                        </div>
+
+                        <!-- Stats Counters -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number" data-target="4.4" data-decimals="1">0</span><span class="stat-suffix">★</span>
+                                <p class="stat-label">Google Rating</p>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" data-target="692">0</span><span class="stat-suffix">+</span>
+                                <p class="stat-label">Guest Reviews</p>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" data-target="34">0</span>
+                                <p class="stat-label">Premium Rooms</p>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                                <p class="stat-label">Years of Hospitality</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accommodation Section -->
+        <section class="accommodation-section" id="accommodation">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">OUR ACCOMMODATIONS</span>
+                    <h2 class="section-title text-white">Refined Spaces of Solitude</h2>
+                    <p class="section-desc text-beige">Select from our collection of elegantly designed rooms, each equipped with premium amenities and overlooking lush scenery.</p>
+                </div>
+
+                <div class="rooms-grid">
+                    <!-- Card 1: Deluxe Room -->
+                    <div class="room-card glass-card reveal-up">
+                        <div class="room-img-wrapper">
+                            <img src="https://shivgiriresort.com/images/rooms/superior.jpg" alt="Deluxe Room at Shivgiri Resort" class="room-img">
+                            <div class="room-badge">Popular</div>
+                        </div>
+                        <div class="room-details">
+                            <h3 class="room-name">Deluxe Room</h3>
+                            <div class="room-specs">
+                                <span><i class="fa-solid fa-maximize text-gold"></i> 320 sq. ft.</span>
+                                <span><i class="fa-solid fa-user-group text-gold"></i> Max 2 Adults</span>
+                            </div>
+                            <p class="room-description">An elegant escape offering tranquil views of the resort gardens, styled with premium wooden furnishings and luxury beds.</p>
+                            <div class="room-amenities-icons">
+                                <span title="Air Conditioning"><i class="fa-solid fa-snowflake"></i></span>
+                                <span title="Free Wi-Fi"><i class="fa-solid fa-wifi"></i></span>
+                                <span title="Smart LED TV"><i class="fa-solid fa-tv"></i></span>
+                                <span title="Tea/Coffee Maker"><i class="fa-solid fa-mug-hot"></i></span>
+                            </div>
+                            <div class="room-footer">
+                                <div class="room-price">
+                                    <span class="price-val">₹4,500</span>
+                                    <span class="price-period">/ night</span>
+                                </div>
+                                <button class="btn-gold-sm book-room-trigger magnetic" data-room="Deluxe Room">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Executive Room -->
+                    <div class="room-card glass-card reveal-up" data-delay="0.1">
+                        <div class="room-img-wrapper">
+                            <img src="https://shivgiriresort.com/images/rooms/Executive-family-Room-01.jpg" alt="Executive Family Room at Shivgiri Resort" class="room-img">
+                            <div class="room-badge">Premium</div>
+                        </div>
+                        <div class="room-details">
+                            <h3 class="room-name">Executive Family Room</h3>
+                            <div class="room-specs">
+                                <span><i class="fa-solid fa-maximize text-gold"></i> 480 sq. ft.</span>
+                                <span><i class="fa-solid fa-user-group text-gold"></i> Max 4 Adults</span>
+                            </div>
+                            <p class="room-description">Spacious multi-bed rooms designed specifically for families and groups, featuring a dedicated sitting area and garden views.</p>
+                            <div class="room-amenities-icons">
+                                <span title="Air Conditioning"><i class="fa-solid fa-snowflake"></i></span>
+                                <span title="Free Wi-Fi"><i class="fa-solid fa-wifi"></i></span>
+                                <span title="Smart LED TV"><i class="fa-solid fa-tv"></i></span>
+                                <span title="Minibar"><i class="fa-solid fa-wine-glass"></i></span>
+                                <span title="Tea/Coffee Maker"><i class="fa-solid fa-mug-hot"></i></span>
+                            </div>
+                            <div class="room-footer">
+                                <div class="room-price">
+                                    <span class="price-val">₹6,000</span>
+                                    <span class="price-period">/ night</span>
+                                </div>
+                                <button class="btn-gold-sm book-room-trigger magnetic" data-room="Executive Family Room">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Family Suite -->
+                    <div class="room-card glass-card reveal-up" data-delay="0.2">
+                        <div class="room-img-wrapper">
+                            <img src="https://shivgiriresort.com/images/rooms/king_room.jpg" alt="Maharani Family Suite" class="room-img">
+                            <div class="room-badge">Luxe</div>
+                        </div>
+                        <div class="room-details">
+                            <h3 class="room-name">Maharani Suite</h3>
+                            <div class="room-specs">
+                                <span><i class="fa-solid fa-maximize text-gold"></i> 650 sq. ft.</span>
+                                <span><i class="fa-solid fa-user-group text-gold"></i> Max 3 Guests</span>
+                            </div>
+                            <p class="room-description">Indulge in royal treatment with our heritage-styled suite, offering expansive views, handcrafted linens, and bespoke bath amenities.</p>
+                            <div class="room-amenities-icons">
+                                <span title="Air Conditioning"><i class="fa-solid fa-snowflake"></i></span>
+                                <span title="Free Wi-Fi"><i class="fa-solid fa-wifi"></i></span>
+                                <span title="Bathtub"><i class="fa-solid fa-bath"></i></span>
+                                <span title="Minibar"><i class="fa-solid fa-wine-glass"></i></span>
+                                <span title="Room Service"><i class="fa-solid fa-bell"></i></span>
+                            </div>
+                            <div class="room-footer">
+                                <div class="room-price">
+                                    <span class="price-val">₹8,500</span>
+                                    <span class="price-period">/ night</span>
+                                </div>
+                                <button class="btn-gold-sm book-room-trigger magnetic" data-room="Maharani Suite">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Premium Cottage -->
+                    <div class="room-card glass-card reveal-up" data-delay="0.3">
+                        <div class="room-img-wrapper">
+                            <img src="https://shivgiriresort.com/images/rooms/maharaja_suite_room.jpg" alt="Maharaja Suite Premium Cottage" class="room-img">
+                            <div class="room-badge">Exclusive</div>
+                        </div>
+                        <div class="room-details">
+                            <h3 class="room-name">Maharaja Suite (Cottage)</h3>
+                            <div class="room-specs">
+                                <span><i class="fa-solid fa-maximize text-gold"></i> 800 sq. ft.</span>
+                                <span><i class="fa-solid fa-user-group text-gold"></i> Max 4 Guests</span>
+                            </div>
+                            <p class="room-description">Our signature cottage set in complete privacy. Includes a private lounge area, jacuzzi bathtub, lake-facing balcony, and private host.</p>
+                            <div class="room-amenities-icons">
+                                <span title="Air Conditioning"><i class="fa-solid fa-snowflake"></i></span>
+                                <span title="Free Wi-Fi"><i class="fa-solid fa-wifi"></i></span>
+                                <span title="Jacuzzi Tub"><i class="fa-solid fa-bath"></i></span>
+                                <span title="Bespoke Minibar"><i class="fa-solid fa-wine-glass"></i></span>
+                                <span title="Lake View"><i class="fa-solid fa-water"></i></span>
+                            </div>
+                            <div class="room-footer">
+                                <div class="room-price">
+                                    <span class="price-val">₹12,000</span>
+                                    <span class="price-period">/ night</span>
+                                </div>
+                                <button class="btn-gold-sm book-room-trigger magnetic" data-room="Maharaja Suite (Cottage)">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section class="amenities-section" id="amenities">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">THE DETAILS OF COMFORT</span>
+                    <h2 class="section-title">Indulgences Designed For You</h2>
+                    <p class="section-desc">Experience a wide array of curated services and recreational amenities crafted to give you the ultimate resort experience.</p>
+                </div>
+
+                <div class="amenities-grid">
+                    <!-- Amenity 1 -->
+                    <div class="amenity-card glass-card reveal-up">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-wifi"></i></div>
+                        <h3>Free Wi-Fi</h3>
+                        <p>High-speed internet access across all resort properties and rooms.</p>
+                    </div>
+                    <!-- Amenity 2 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.05">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-coffee"></i></div>
+                        <h3>Free Breakfast</h3>
+                        <p>A lavish, multi-cuisine gourmet buffet spread to start your day.</p>
+                    </div>
+                    <!-- Amenity 3 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.1">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-water-ladder"></i></div>
+                        <h3>Swimming Pool</h3>
+                        <p>A pristine outdoor pool with separate children's splash pool.</p>
+                    </div>
+                    <!-- Amenity 4 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.15">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-utensils"></i></div>
+                        <h3>Restaurant</h3>
+                        <p>Exquisite multi-cuisine fine dining featuring local and global flavors.</p>
+                    </div>
+                    <!-- Amenity 5 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.2">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-snowflake"></i></div>
+                        <h3>Air Conditioning</h3>
+                        <p>Centralized cooling to keep you perfectly comfortable during your stay.</p>
+                    </div>
+                    <!-- Amenity 6 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.25">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-square-parking"></i></div>
+                        <h3>Free Parking</h3>
+                        <p>Secure, spacious, and dedicated on-site parking for all vehicles.</p>
+                    </div>
+                    <!-- Amenity 7 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.3">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-synagogue"></i></div>
+                        <h3>Banquet Hall</h3>
+                        <p>Grand indoor air-conditioned banquet hall hosting up to 500 guests.</p>
+                    </div>
+                    <!-- Amenity 8 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.35">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-users-line"></i></div>
+                        <h3>Conference Hall</h3>
+                        <p>Fully equipped corporate training and meeting setup with projector resources.</p>
+                    </div>
+                    <!-- Amenity 9 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.4">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-child-reaching"></i></div>
+                        <h3>Kids Play Area</h3>
+                        <p>A fun-filled, safe outdoor zone designed with recreational slides.</p>
+                    </div>
+                    <!-- Amenity 10 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.45">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-tree"></i></div>
+                        <h3>Garden Paths</h3>
+                        <p>Lush landscaped botanical garden paths perfect for morning walks.</p>
+                    </div>
+                    <!-- Amenity 11 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.5">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-bell-concierge"></i></div>
+                        <h3>Room Service</h3>
+                        <p>Round-the-clock room dining service delivered straight to your suite.</p>
+                    </div>
+                    <!-- Amenity 12 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.55">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-chair"></i></div>
+                        <h3>Outdoor Seating</h3>
+                        <p>Tranquil wooden gazebos and seating spots distributed in nature.</p>
+                    </div>
+                    <!-- Amenity 13 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.6">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-route"></i></div>
+                        <h3>Nature Walk</h3>
+                        <p>On-site walking trails weaving around Shelti Lake and tropical woodlands.</p>
+                    </div>
+                    <!-- Amenity 14 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.65">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-camera"></i></div>
+                        <h3>Photography Spots</h3>
+                        <p>Carefully landscaped points designed for catching the perfect sunset view.</p>
+                    </div>
+                    <!-- Amenity 15 -->
+                    <div class="amenity-card glass-card reveal-up" data-delay="0.7">
+                        <div class="amenity-glow"></div>
+                        <div class="amenity-icon"><i class="fa-solid fa-headset"></i></div>
+                        <h3>24x7 Reception</h3>
+                        <p>Concierge and hospitality support always ready to assist you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dining Experience Section -->
+        <section class="dining-section" id="dining">
+            <div class="section-container">
+                <div class="dining-grid">
+                    <div class="dining-text reveal-left">
+                        <span class="section-subtitle">CULINARY JOURNEYS</span>
+                        <h2 class="section-title text-white">Dhara Multi-Cuisine Restaurant</h2>
+                        <p class="dining-desc">Savor an exquisite symphony of taste at **Dhara**, our signature multi-cuisine dining destination. From the rich aromatic spices of traditional North Indian food to carefully curated Continental and Chinese classics, our gourmet chefs prepare each meal using fresh, locally sourced ingredients.</p>
+                        
+                        <div class="dining-tabs">
+                            <button class="dining-tab-btn active" data-dining="buffet">Breakfast Buffet</button>
+                            <button class="dining-tab-btn" data-dining="lunch">Lunch</button>
+                            <button class="dining-tab-btn" data-dining="dinner">Dinner</button>
+                            <button class="dining-tab-btn" data-dining="local">Local Cuisine</button>
+                            <button class="dining-tab-btn" data-dining="family">Family Dining</button>
+                            <button class="dining-tab-btn" data-dining="bbq">BBQ Nights</button>
+                        </div>
+
+                        <div class="dining-tab-content" id="diningTabContent">
+                            <div class="dining-panel active" id="buffet">
+                                <h3>Gourmet Morning Starters</h3>
+                                <p>Begin your morning with fresh juices, seasonal fruits, bakery items, live egg counters, and hot South Indian & Gujarati options.</p>
+                                <span class="dining-hours"><i class="fa-regular fa-clock text-gold"></i> Daily: 7:30 AM - 10:30 AM</span>
+                            </div>
+                            <div class="dining-panel" id="lunch">
+                                <h3>Sumptuous Midday Feasts</h3>
+                                <p>Re-energize with custom thalis, hot soups, dynamic tandoori platters, and light salad bars tailored to your tastes.</p>
+                                <span class="dining-hours"><i class="fa-regular fa-clock text-gold"></i> Daily: 12:30 PM - 3:30 PM</span>
+                            </div>
+                            <div class="dining-panel" id="dinner">
+                                <h3>Elegant Under-the-Stars Dining</h3>
+                                <p>Enjoy curated multi-course menus featuring premium continental delights, sizzling starters, and artisanal desserts in an ambient setting.</p>
+                                <span class="dining-hours"><i class="fa-regular fa-clock text-gold"></i> Daily: 7:30 PM - 11:00 PM</span>
+                            </div>
+                            <div class="dining-panel" id="local">
+                                <h3>Authentic Local Tastes</h3>
+                                <p>Experience true tribal & regional cuisine of Dadra & Nagar Haveli. Savour traditional preparations made by native culinary hands.</p>
+                                <span class="dining-hours"><i class="fa-regular fa-clock text-gold"></i> Available on Request</span>
+                            </div>
+                            <div class="dining-panel" id="family">
+                                <h3>Joyous Shared Platters</h3>
+                                <p>Spacious seating tables with grand multi-dish setups, perfect for family bonding over comfort food and rich beverages.</p>
+                                <span class="dining-hours"><i class="fa-regular fa-clock text-gold"></i> Always Welcoming Families</span>
+                            </div>
+                            <div class="dining-panel" id="bbq">
+                                <h3>Smoky BBQ Grills</h3>
+                                <p>Indulge in charcoal-fired barbecued skewers, spiced vegetables, paneer, and local marinades served hot by the poolside deck.</p>
+                                <span class="dining-hours"><i class="fa-regular fa-clock text-gold"></i> Weekends: 7:00 PM - 10:30 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dining-images reveal-right">
+                        <div class="dining-img-holder">
+                            <img src="https://shivgiriresort.com/images/facilities/dhara.jpg" alt="Dhara Restaurant Dining Area" class="dining-img active" id="diningImgMain">
+                            <div class="dining-img-overlay glass-card">
+                                <h4 id="diningOverlayTitle">Dhara Restaurant</h4>
+                                <p id="diningOverlayDesc">Gourmet fine dining in elegance</p>
+                            </div>
+                        </div>
+                        <div class="dining-sky-lounge glass-card">
+                            <div class="sky-lounge-header">
+                                <i class="fa-solid fa-wind text-gold"></i>
+                                <div>
+                                    <h4>Anant Vayu</h4>
+                                    <p>Sky Lounge & Deck</p>
+                                </div>
+                            </div>
+                            <p class="sky-lounge-text">Unwind under the evening sky with specialty beverages and mocktails overlooking the Shelti Lake breeze.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiences (Scroll Storytelling Section) -->
+        <section class="experience-section" id="experiences">
+            <div class="experience-sticky-wrapper">
+                <div class="experience-left">
+                    <div class="experience-img-container">
+                        <img src="https://shivgiriresort.com/images/background/5.jpg" class="exp-img active" id="expImg1" data-exp="morning" alt="Morning Nature Experience">
+                        <img src="https://shivgiriresort.com/images/facilities/pool.jpg" class="exp-img" id="expImg2" data-exp="pool" alt="Swimming Pool Experience">
+                        <img src="https://shivgiriresort.com/images/rooms/Executive-family-Room-01.jpg" class="exp-img" id="expImg3" data-exp="rooms" alt="Luxury Rooms Experience">
+                        <img src="https://shivgiriresort.com/images/facilities/dhara.jpg" class="exp-img" id="expImg4" data-exp="dining" alt="Fine Dining Experience">
+                        <img src="https://shivgiriresort.com/images/facilities/Kailasha.jpg" class="exp-img" id="expImg5" data-exp="events" alt="Events Venue Experience">
+                        <img src="https://shivgiriresort.com/images/slider/perfect.jpg" class="exp-img" id="expImg6" data-exp="family" alt="Family Time Experience">
+                        <img src="https://shivgiriresort.com/images/background/2.jpg" class="exp-img" id="expImg7" data-exp="bonfire" alt="Bonfire Evening Experience">
+                        <img src="https://shivgiriresort.com/images/background/7.jpg" class="exp-img" id="expImg8" data-exp="relaxation" alt="Nature Meditation Experience">
+                    </div>
+                </div>
+                <div class="experience-right">
+                    <div class="experience-right-inner">
+                        <div class="experience-block" data-exp="morning">
+                            <span class="exp-num">01</span>
+                            <span class="exp-tag">MORNING GLORY</span>
+                            <h3>Morning Nature</h3>
+                            <p>Wake up to the soft rustling of forest leaves and a symphony of bird songs under the lush Silvassa tree canopy. Take an early stroll on our jogging track to witness the morning mist lifting off the grass.</p>
+                        </div>
+                        <div class="experience-block" data-exp="pool">
+                            <span class="exp-num">02</span>
+                            <span class="exp-tag">AZURE WATERS</span>
+                            <h3>Swimming Pool</h3>
+                            <p>Bask in the warm tropical sun by our outdoor pool. Take a refreshing swim in the azure waters or enjoy a quiet reading hour on the poolside loungers, while your little ones play safely in the shallow baby pool.</p>
+                        </div>
+                        <div class="experience-block" data-exp="rooms">
+                            <span class="exp-num">03</span>
+                            <span class="exp-tag">PRIVATE SANCTUARY</span>
+                            <h3>Luxury Rooms</h3>
+                            <p>Withdraw into our elegantly styled suites featuring private balconies, central air conditioning, smart televisions, and direct views of Shelti Lake. The perfect blend of rustic nature and plush comfort.</p>
+                        </div>
+                        <div class="experience-block" data-exp="dining">
+                            <span class="exp-num">04</span>
+                            <span class="exp-tag">GASTRONOMY</span>
+                            <h3>Dining at Dhara</h3>
+                            <p>Savour delicious multi-cuisine menus prepared by our executive chefs. From global Continental classics to rich Tandoori platters and authentic regional tribal recipes, every meal is a sensory celebration.</p>
+                        </div>
+                        <div class="experience-block" data-exp="events">
+                            <span class="exp-num">05</span>
+                            <span class="exp-tag">MILESTONES</span>
+                            <h3>Grand Event Celebrations</h3>
+                            <p>Host destination weddings, corporate training events, or family banquets. With our air-conditioned Kailasha Banquet Hall and 1-acre landscaped open party lawns, we turn your special milestones into timeless memories.</p>
+                        </div>
+                        <div class="experience-block" data-exp="family">
+                            <span class="exp-num">06</span>
+                            <span class="exp-tag">TOGETHERNESS</span>
+                            <h3>Joyful Family Time</h3>
+                            <p>Spend precious hours playing indoor chess, carrom, or outdoor badminton and cricket. Watch your kids explore the safe, green play areas designed for high-spirited fun.</p>
+                        </div>
+                        <div class="experience-block" data-exp="bonfire">
+                            <span class="exp-num">07</span>
+                            <span class="exp-tag">DUST & EMBER</span>
+                            <h3>Cozy Evening Bonfire</h3>
+                            <p>As dusk settles over the resort, gather around warm bonfires under the open sky. Share stories, roast treats, and enjoy weekend live music sessions that set a relaxed vacation mood.</p>
+                        </div>
+                        <div class="experience-block" data-exp="relaxation">
+                            <span class="exp-num">08</span>
+                            <span class="exp-tag">MINDFULNESS</span>
+                            <h3>Pure Relaxation</h3>
+                            <p>Conclude your day at our meditation points, listening to the gentle lake breeze. Unwind completely and let go of stress in an atmosphere crafted to soothe your mind, body, and soul.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section class="activities-section" id="activities">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">RESORT ADVENTURES</span>
+                    <h2 class="section-title">Moments of Pure Recreation</h2>
+                    <p class="section-desc">Create timeless memories with custom outdoor excursions, nature exploration, and exciting indoor games for all ages.</p>
+                </div>
+
+                <!-- Swiper Container for Activities -->
+                <div class="swiper activities-swiper reveal-up">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide activity-slide">
+                            <div class="activity-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://shivgiriresort.com/images/facilities/pool.jpg');">
+                                <div class="activity-info">
+                                    <div class="activity-icon-badge"><i class="fa-solid fa-swimming-pool"></i></div>
+                                    <h3>Swimming & Diving</h3>
+                                    <p>Refresh yourself in the crystal-clear pool, surrounded by cozy sunbeds.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide activity-slide">
+                            <div class="activity-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://shivgiriresort.com/images/slider/perfect.jpg');">
+                                <div class="activity-info">
+                                    <div class="activity-icon-badge"><i class="fa-solid fa-gamepad"></i></div>
+                                    <h3>Indoor Games</h3>
+                                    <p>Enjoy friendly matches of chess, carrom, and table tennis inside our games room.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide activity-slide">
+                            <div class="activity-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://shivgiriresort.com/images/slider/012.jpg');">
+                                <div class="activity-info">
+                                    <div class="activity-icon-badge"><i class="fa-solid fa-baseball-bat-ball"></i></div>
+                                    <h3>Outdoor Sports</h3>
+                                    <p>Play friendly rounds of cricket, badminton, or football on our 1-acre greens.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide activity-slide">
+                            <div class="activity-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://shivgiriresort.com/images/slider/s6.jpg');">
+                                <div class="activity-info">
+                                    <div class="activity-icon-badge"><i class="fa-solid fa-users"></i></div>
+                                    <h3>Family Gatherings</h3>
+                                    <p>Host fun evening tea circles or family games on our scenic lawn areas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide activity-slide">
+                            <div class="activity-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://shivgiriresort.com/images/background/5.jpg');">
+                                <div class="activity-info">
+                                    <div class="activity-icon-badge"><i class="fa-solid fa-route"></i></div>
+                                    <h3>Nature Walks</h3>
+                                    <p>Take guided paths along the quiet lake banks under local tropical flora.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="swiper-slide activity-slide">
+                            <div class="activity-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://shivgiriresort.com/images/slider/05.jpg');">
+                                <div class="activity-info">
+                                    <div class="activity-icon-badge"><i class="fa-solid fa-camera"></i></div>
+                                    <h3>Photography</h3>
+                                    <p>Capture spectacular memories at designated aesthetic points around the resort.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 7 -->
+                        <div class="swiper-slide activity-slide">
+                            <div class="activity-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://shivgiriresort.com/images/slider/S20.jpg');">
+                                <div class="activity-info">
+                                    <div class="activity-icon-badge"><i class="fa-solid fa-child"></i></div>
+                                    <h3>Kids Activities</h3>
+                                    <p>Fun, creative slides, swings, and safe sandbox spaces for your little ones.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 8 -->
+                        <div class="swiper-slide activity-slide">
+                            <div class="activity-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('https://shivgiriresort.com/images/background/2.jpg');">
+                                <div class="activity-info">
+                                    <div class="activity-icon-badge"><i class="fa-solid fa-couch"></i></div>
+                                    <h3>Relaxation</h3>
+                                    <p>Unwind near bonfire zones with ambient live music sessions during weekends.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation & Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-btn swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="swiper-btn swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">VISUAL JOURNEYS</span>
+                    <h2 class="section-title text-white">Moments Captured In Time</h2>
+                    <p class="section-desc text-beige">Take a visual tour of Shivgiri Resort's architectural excellence, spacious suites, and natural beauty.</p>
+                </div>
+
+                <!-- Gallery Filters -->
+                <div class="gallery-filters reveal-up">
+                    <button class="filter-btn active" data-filter="all">All Photos</button>
+                    <button class="filter-btn" data-filter="rooms">Rooms</button>
+                    <button class="filter-btn" data-filter="pool">Pool</button>
+                    <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+                    <button class="filter-btn" data-filter="food">Food</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="exterior">Exterior</button>
+                    <button class="filter-btn" data-filter="garden">Garden</button>
+                    <button class="filter-btn" data-filter="night">Night View</button>
+                    <button class="filter-btn" data-filter="drone">Drone View</button>
+                </div>
+
+                <!-- Pinterest-style Masonry Gallery -->
+                <div class="gallery-masonry reveal-up">
+                    <!-- Item 1: Rooms -->
+                    <div class="gallery-item" data-category="rooms">
+                        <img src="https://shivgiriresort.com/images/gallery/g1.jpg" alt="Luxury Room Decor" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Rooms</span>
+                            <h4>Royal Comfort</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 2: Pool -->
+                    <div class="gallery-item" data-category="pool">
+                        <img src="https://shivgiriresort.com/images/gallery/g2.jpg" alt="Swimming Pool and Deck" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Pool</span>
+                            <h4>Azure Waters</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 3: Restaurant -->
+                    <div class="gallery-item" data-category="restaurant">
+                        <img src="https://shivgiriresort.com/images/gallery/g3.jpg" alt="Fine Dining Restaurant Setup" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Restaurant</span>
+                            <h4>Dhara Fine Dining</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 4: Garden -->
+                    <div class="gallery-item" data-category="garden">
+                        <img src="https://shivgiriresort.com/images/gallery/g04.jpg" alt="Lush Green Garden Path" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Garden</span>
+                            <h4>Botanical Pathways</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 5: Events -->
+                    <div class="gallery-item" data-category="events">
+                        <img src="https://shivgiriresort.com/images/gallery/g5.jpg" alt="Corporate Conference Setup" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Events</span>
+                            <h4>Kailasha Banquet Hall</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 6: Exterior -->
+                    <div class="gallery-item" data-category="exterior">
+                        <img src="https://shivgiriresort.com/images/gallery/g6.jpg" alt="Resort Facade View" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Exterior</span>
+                            <h4>Resort Grand Facade</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 7: Food -->
+                    <div class="gallery-item" data-category="food">
+                        <img src="https://shivgiriresort.com/images/gallery/g8.jpg" alt="Gourmet Food Presentation" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Food</span>
+                            <h4>Chef's Gourmet Special</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 8: Night View -->
+                    <div class="gallery-item" data-category="night">
+                        <img src="https://shivgiriresort.com/images/gallery/g9.jpg" alt="Resort Illumination at Night" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Night View</span>
+                            <h4>Midnight Radiance</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 9: Extra Rooms -->
+                    <div class="gallery-item" data-category="rooms">
+                        <img src="https://shivgiriresort.com/images/gallery/g10.jpg" alt="Spacious Suite Bed Layout" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Rooms</span>
+                            <h4>Suite Interiors</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 10: Drone -->
+                    <div class="gallery-item" data-category="drone">
+                        <img src="https://shivgiriresort.com/images/slider/S20.jpg" alt="Drone view of Shivgiri Resort" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Drone View</span>
+                            <h4>Aerial Landscape</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 11: Drone 2 -->
+                    <div class="gallery-item" data-category="drone">
+                        <img src="https://shivgiriresort.com/images/slider/perfect.jpg" alt="Drone shot of Shelti Lake borders" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Drone View</span>
+                            <h4>Lake-side Canopy</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                    <!-- Item 12: Extra Events -->
+                    <div class="gallery-item" data-category="events">
+                        <img src="https://shivgiriresort.com/images/gallery/g12.jpg" alt="Lawn Wedding Theme Setup" loading="lazy" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-cat">Events</span>
+                            <h4>1-Acre Outdoor Wedding</h4>
+                            <i class="fa-solid fa-expand-alt zoom-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lightbox Modal -->
+            <div class="lightbox-modal" id="lightbox">
+                <span class="lightbox-close" id="lightboxClose">&times;</span>
+                <span class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></span>
+                <span class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></span>
+                <div class="lightbox-content-wrapper">
+                    <img src="" alt="Zoomed view" class="lightbox-img" id="lightboxImg">
+                    <div class="lightbox-caption" id="lightboxCaption">Caption Text</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Reviews Section -->
+        <section class="reviews-section" id="reviews">
+            <div class="section-container">
+                <div class="reviews-header-grid">
+                    <div class="reviews-stats reveal-left">
+                        <span class="section-subtitle">GUEST SATISFACTION</span>
+                        <h2 class="section-title">What Our Guests Say</h2>
+                        <div class="google-rating-display glass-card">
+                            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                            <span class="rating-num">4.4 / 5</span>
+                            <p class="rating-details">Based on 692+ verified Google reviews</p>
+                        </div>
+                    </div>
+                    <div class="reviews-slider-wrapper reveal-right">
+                        <!-- Swiper Testimonials -->
+                        <div class="swiper reviews-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Review 1 -->
+                                <div class="swiper-slide review-slide glass-card">
+                                    <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                    <p class="review-comment">"Wonderful experience! The atmosphere is highly peaceful, away from all city noise. The swimming pool is incredibly clean and well-maintained. The food at Dhara restaurant is simply delicious, and the staff is extremely hospitable. Definitely coming back!"</p>
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                                        <div>
+                                            <h4>Rahul Sharma</h4>
+                                            <span class="reviewer-title">Google Reviewer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review 2 -->
+                                <div class="swiper-slide review-slide glass-card">
+                                    <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                    <p class="review-comment">"Perfect corporate training venue. We booked their conference hall and maharaja suites for our executive meeting. The layout is beautiful, projectors and internet were super smooth, and the event lawn hosted a grand dinner. Highly recommended."</p>
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                                        <div>
+                                            <h4>Priya Patel</h4>
+                                            <span class="reviewer-title">HR Manager, TechCorp</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Review 3 -->
+                                <div class="swiper-slide review-slide glass-card">
+                                    <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                                    <p class="review-comment">"Outstanding weekend getaway with kids. The children play area is vast and safe, our Executive family room had plenty of space for the entire family. Clean hot water, tea maker inside the room, and overall top hospitality. Highly recommended!"</p>
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                                        <div>
+                                            <h4>Amit Verma</h4>
+                                            <span class="reviewer-title">Family Traveller</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination-reviews"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking & Nearby Attractions Section -->
+        <section class="booking-section" id="booking">
+            <div class="section-container">
+                <div class="booking-section-grid">
+                    <!-- Reservation Form -->
+                    <div class="reservation-form-container glass-card reveal-left">
+                        <span class="section-subtitle">SECURE YOUR STAY</span>
+                        <h2 class="section-title text-white">Reserve Your Sanctuary</h2>
+                        <form id="detailedBookingForm" class="luxury-form">
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="bookingName">Full Name *</label>
+                                    <input type="text" id="bookingName" placeholder="Enter contact name" required>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="bookingPhone">Phone Number *</label>
+                                    <input type="tel" id="bookingPhone" placeholder="10-digit mobile number" required pattern="[0-9]{10}">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="bookingEmail">Email Address *</label>
+                                    <input type="email" id="bookingEmail" placeholder="yourname@gmail.com" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="bookingCheckIn">Check In Date *</label>
+                                    <input type="date" id="bookingCheckIn" required>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="bookingCheckOut">Check Out Date *</label>
+                                    <input type="date" id="bookingCheckOut" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-4">
+                                    <label for="bookingRoomType">Room Category *</label>
+                                    <select id="bookingRoomType" required>
+                                        <option value="">Select Room</option>
+                                        <option value="Deluxe Room">Deluxe Room (₹4,500/N)</option>
+                                        <option value="Executive Family Room">Executive Family Room (₹6,000/N)</option>
+                                        <option value="Maharani Suite">Maharani Suite (₹8,500/N)</option>
+                                        <option value="Maharaja Suite (Cottage)">Maharaja Suite Cottage (₹12,000/N)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="bookingAdults">Adults *</label>
+                                    <input type="number" id="bookingAdults" min="1" max="10" value="2" required>
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="bookingChildren">Children</label>
+                                    <input type="number" id="bookingChildren" min="0" max="6" value="0">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="bookingRequests">Special Requests / Remarks</label>
+                                    <textarea id="bookingRequests" placeholder="E.g., early check-in, extra bed, dietary needs..." rows="3" style="resize:none;"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-gold w-full text-center" id="bookingSubmitBtn">
+                                <span class="btn-text">Confirm Booking Request</span>
+                                <span class="spinner" id="bookingSpinner"></span>
+                            </button>
+                            <div class="booking-response" id="bookingResponse"></div>
+                        </form>
+                    </div>
+
+                    <!-- Nearby Attractions -->
+                    <div class="attractions-container reveal-right">
+                        <span class="section-subtitle">EXPLORE SILVASSA</span>
+                        <h2 class="section-title">Nearby Attractions</h2>
+                        <p class="attractions-desc">Enhance your retreat by visiting these scenic, cultural, and historical tourist destinations located within minutes of the resort.</p>
+                        
+                        <div class="attractions-list">
+                            <!-- Card 1 -->
+                            <div class="attraction-card glass-card">
+                                <div class="attraction-flex">
+                                    <img src="https://shivgiriresort.com/images/dudhni_lake.jpg" alt="Dudhni Lake Silvassa" class="attraction-thumb">
+                                    <div class="attraction-info-block">
+                                        <div class="attraction-header">
+                                            <h4>Dudhni Lake</h4>
+                                            <span class="distance-badge"><i class="fa-solid fa-car text-gold"></i> 15 km</span>
+                                        </div>
+                                        <p>A stunning, expansive lake created by the Damanganga reservoir. Known for thrilling water sports, boating, and scenic sunset views.</p>
+                                        <a href="https://maps.google.com/?q=Dudhni+Lake+Silvassa" target="_blank" rel="noopener" class="directions-link text-gold"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="attraction-card glass-card">
+                                <div class="attraction-flex">
+                                    <img src="https://shivgiriresort.com/images/lion-safari.jpg" alt="Tiger Safari Silvassa" class="attraction-thumb">
+                                    <div class="attraction-info-block">
+                                        <div class="attraction-header">
+                                            <h4>Khanvel Tiger Safari</h4>
+                                            <span class="distance-badge"><i class="fa-solid fa-car text-gold"></i> 2 km</span>
+                                        </div>
+                                        <p>Take guided mini-bus safaris to spot Bengal tigers roaming in their natural woodlands enclosure.</p>
+                                        <a href="https://maps.google.com/?q=Vasona+Lion+Safari+Silvassa" target="_blank" rel="noopener" class="directions-link text-gold"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="attraction-card glass-card">
+                                <div class="attraction-flex">
+                                    <img src="https://shivgiriresort.com/images/deer-park.jpg" alt="Satmaliya Deer Park" class="attraction-thumb">
+                                    <div class="attraction-info-block">
+                                        <div class="attraction-header">
+                                            <h4>Satmaliya Deer Park</h4>
+                                            <span class="distance-badge"><i class="fa-solid fa-car text-gold"></i> 6 km</span>
+                                        </div>
+                                        <p>Home to various deer species including blackbucks, spotted deer, and chitals. Includes wildlife watchtowers.</p>
+                                        <a href="https://maps.google.com/?q=Satmaliya+Deer+Park+Silvassa" target="_blank" rel="noopener" class="directions-link text-gold"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="attraction-card glass-card">
+                                <div class="attraction-flex">
+                                    <img src="https://shivgiriresort.com/images/gallery/g10.jpg" alt="Tribal Museum" class="attraction-thumb">
+                                    <div class="attraction-info-block">
+                                        <div class="attraction-header">
+                                            <h4>Tribal Museum</h4>
+                                            <span class="distance-badge"><i class="fa-solid fa-car text-gold"></i> 2 km</span>
+                                        </div>
+                                        <p>Showcases tribal ornaments, musical instruments, warli paintings, agricultural gear, and regional masks.</p>
+                                        <a href="https://maps.google.com/?q=Tribal+Cultural+Museum+Silvassa" target="_blank" rel="noopener" class="directions-link text-gold"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="attraction-card glass-card">
+                                <div class="attraction-flex">
+                                    <img src="https://shivgiriresort.com/images/gallery/g11.jpg" alt="Vanganga Lake Garden" class="attraction-thumb">
+                                    <div class="attraction-info-block">
+                                        <div class="attraction-header">
+                                            <h4>Vanganga Garden</h4>
+                                            <span class="distance-badge"><i class="fa-solid fa-car text-gold"></i> 18 km</span>
+                                        </div>
+                                        <p>Beautiful Japanese-style garden complete with paddleboat lakes, wooden bridges, and musical water fountains.</p>
+                                        <a href="https://maps.google.com/?q=Vanganga+Lake+Garden+Silvassa" target="_blank" rel="noopener" class="directions-link text-gold"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">CONNECT WITH US</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-desc">Our dedicated reservation team is available 24/7 to answer your queries and plan your perfect itinerary.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal-left">
+                        <div class="info-item glass-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>Khanvel–Khutli Road, Village Khanvel, Silvassa, Dadra & Nagar Haveli and Daman & Diu – 396230</p>
+                            </div>
+                        </div>
+                        <div class="info-item glass-card">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Phone Numbers</h3>
+                                <p><a href="tel:+919157099066">+91 91570 99066</a></p>
+                                <p><a href="tel:+919824326726">+91 98243 26726</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item glass-card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h3>Email Address</h3>
+                                <p><a href="mailto:booking@shivgiriresort.com">booking@shivgiriresort.com</a></p>
+                                <p><a href="mailto:shivgiriresort@gmail.com">shivgiriresort@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item glass-card">
+                            <i class="fa-solid fa-globe"></i>
+                            <div>
+                                <h3>Official Website</h3>
+                                <p><a href="https://shivgiriresort.com" target="_blank" rel="noopener">shivgiriresort.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Socials -->
+                        <div class="contact-socials-holder">
+                            <h3>Follow Our Sanctuary</h3>
+                            <div class="social-icons">
+                                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form + Map -->
+                    <div class="contact-forms-wrapper reveal-right">
+                        <form id="contactForm" class="contact-form glass-card">
+                            <h3>Send Us A Message</h3>
+                            <div class="form-group">
+                                <label for="contactName">Name</label>
+                                <input type="text" id="contactName" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" required placeholder="Your email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Message</label>
+                                <textarea id="contactMessage" required placeholder="How can we assist you?" rows="4" style="resize:none;"></textarea>
+                            </div>
+                            <button type="submit" class="btn-gold w-full text-center" id="contactSubmitBtn">Submit Enquiry</button>
+                            <div class="contact-response" id="contactResponse"></div>
+                        </form>
+
+                        <div class="map-container glass-card">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.1353246478956!2d73.06497797597148!3d20.21132801452399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0c8859942a225%3A0x66c06b26d83a157e!2sShivgiri%20Resort!5e0!3m2!1sen!2sin!4v1720080000000!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="220" 
+                                style="border:0; border-radius:12px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Shivgiri Resort Location Map">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Large Premium Footer -->
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-brand">
+                    <img src="https://shivgiriresort.com/images/shivgiri.png" alt="Shivgiri Resort Logo" class="footer-logo">
+                    <h3>SHIVGIRI RESORT</h3>
+                    <p class="brand-tagline">Silvassa's Premier Nature-Inspired Luxury Sanctuary</p>
+                    <p class="brand-desc">Spanning 5 acres of lush landscaped flora, delivering royal heritage suites, fine dining, and memorable forest experiences.</p>
+                </div>
+                <!-- Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Resort</a></li>
+                        <li><a href="#accommodation">Suites & Rooms</a></li>
+                        <li><a href="#amenities">Resort Amenities</a></li>
+                        <li><a href="#dining">Culinary Dhara</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                        <li><a href="#gallery">Photo Gallery</a></li>
+                        <li><a href="#reviews">Guest Reviews</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Information</h3>
+                    <p><i class="fa-solid fa-location-dot text-gold"></i> Khanvel - Khutli Road, Village Khanvel, Silvassa, DNH & DD - 396230</p>
+                    <p><i class="fa-solid fa-phone text-gold"></i> +91 91570 99066</p>
+                    <p><i class="fa-solid fa-phone text-gold"></i> +91 98243 26726</p>
+                    <p><i class="fa-solid fa-envelope text-gold"></i> booking@shivgiriresort.com</p>
+                </div>
+                <!-- Instagram Gallery Widget -->
+                <div class="footer-instagram">
+                    <h3>Instagram Sanctuary</h3>
+                    <p>Follow our visual updates at <a href="https://instagram.com" target="_blank" rel="noopener" class="text-gold">@shivgiriresort</a></p>
+                    <div class="instagram-feed-grid">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="insta-item">
+                            <img src="https://shivgiriresort.com/images/gallery/g1.jpg" alt="Instagram Post 1">
+                            <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="insta-item">
+                            <img src="https://shivgiriresort.com/images/gallery/g2.jpg" alt="Instagram Post 2">
+                            <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="insta-item">
+                            <img src="https://shivgiriresort.com/images/gallery/g3.jpg" alt="Instagram Post 3">
+                            <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="insta-item">
+                            <img src="https://shivgiriresort.com/images/gallery/g04.jpg" alt="Instagram Post 4">
+                            <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="insta-item">
+                            <img src="https://shivgiriresort.com/images/gallery/g5.jpg" alt="Instagram Post 5">
+                            <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="insta-item">
+                            <img src="https://shivgiriresort.com/images/gallery/g6.jpg" alt="Instagram Post 6">
+                            <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Credits -->
+            <div class="footer-bottom">
+                <div class="bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+                <p>&copy; 2026 Shivgiri Resort. All rights reserved. Built with luxury precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919157099066?text=Hi!%20I'm%20interested%20in%20booking%20a%20stay%20at%20Shivgiri%20Resort." 
+       class="whatsapp-btn" 
+       target="_blank" 
+       rel="noopener" 
+       aria-label="Contact us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-badge">Chat with Us</span>
+    </a>
+
+    <!-- Room Booking Overlay Modal (Dynamic trigger) -->
+    <div class="booking-modal-overlay" id="roomModal">
+        <div class="booking-modal glass-card">
+            <span class="modal-close" id="roomModalClose">&times;</span>
+            <h3>Quick Room Booking</h3>
+            <h4 class="modal-room-title text-gold" id="modalRoomName">Deluxe Room</h4>
+            <form id="modalBookingForm">
+                <div class="form-group">
+                    <label for="modalName">Name *</label>
+                    <input type="text" id="modalName" required placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Phone *</label>
+                    <input type="tel" id="modalPhone" required placeholder="10-digit mobile" pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <label for="modalEmail">Email *</label>
+                    <input type="email" id="modalEmail" required placeholder="Email address">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <label for="modalCheckIn">Check In *</label>
+                        <input type="date" id="modalCheckIn" required>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="modalCheckOut">Check Out *</label>
+                        <input type="date" id="modalCheckOut" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-gold w-full text-center">Submit Booking Enquiry</button>
+                <div class="modal-response" id="modalResponse"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Lenis for Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <!-- GSAP for Advanced Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Swiper.js for Touch Carousels -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="index.js"></script>
+</body>
+</html>
