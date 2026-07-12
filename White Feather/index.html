@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Feather Glamping Tent Resort Kauncha, Silvassa | Ultra-Premium Lakeside Retreat</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Experience award-winning luxury glamping beside Dudhni Lake at White Feather Resort in Kauncha, Silvassa. Immersive nature, fine dining, infinity pool, and premium AC tents. Book your luxury getaway.">
+    <meta name="keywords" content="White Feather Resort Silvassa, luxury glamping silvassa, dudhni lake resort, kauncha premium tents, aman style resort india, luxury wedding venues surat, lake view cottages">
+    <meta name="author" content="White Feather Glamping Resort">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://whitefeatherresort.com/silvassa/index.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="White Feather Glamping Tent Resort | Lakeside Luxury Retreat">
+    <meta property="og:description" content="A world-class glamping haven on the banks of Dudhni Lake. Fully air-conditioned tents, organic architecture, and pristine forest scenery.">
+    <meta property="og:url" content="https://whitefeatherresort.com/silvassa/index.html">
+    <meta property="og:image" content="https://whitefeatherresort.com/silvassa/images/kauncha-lake-view-cottage.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="White Feather Glamping Resort Kauncha, Silvassa">
+    <meta property="twitter:description" content="Immersive luxury glamping on the banks of Dudhni Lake. Fully AC tents, infinity pool, and pristine forest views.">
+    <meta property="twitter:image" content="https://whitefeatherresort.com/silvassa/images/kauncha-lake-view-cottage.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://whitefeatherresort.com/silvassa/images/logo.png">
+
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Cursor elements for Awwwards feel -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-glow" id="customCursorGlow"></div>
+
+    <!-- Luxury Loader Screen -->
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader-logo-container">
+                <span class="loader-logo-main">WHITE FEATHER</span>
+                <span class="loader-logo-sub">GLAMPING RESORT</span>
+            </div>
+            <div class="loader-percentage-box">
+                <span class="loader-percentage" id="loaderPercent">0</span><span class="percent-sign">%</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress" id="loaderProgress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transparent Glass Navbar -->
+    <header id="main-header">
+        <div class="container header-nav-flex">
+            <a href="#" class="logo-brand magnetic" data-dist="10">
+                <span class="logo-main">WHITE FEATHER</span>
+                <span class="logo-sub">GLAMPING RESORT</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="active magnetic" data-dist="15">Home</a></li>
+                    <li><a href="#about" class="magnetic" data-dist="15">Story</a></li>
+                    <li><a href="#rooms" class="magnetic" data-dist="15">Stays</a></li>
+                    <li><a href="#experience" class="magnetic" data-dist="15">Experience</a></li>
+                    <li><a href="#amenities" class="magnetic" data-dist="15">Amenities</a></li>
+                    <li><a href="#dining" class="magnetic" data-dist="15">Dining</a></li>
+                    <li><a href="#gallery" class="magnetic" data-dist="15">Gallery</a></li>
+                    <li><a href="#reviews" class="magnetic" data-dist="15">Reviews</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-gold btn-sm magnetic" data-dist="15">Reserve Stay</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Scroll Progress Indicator Line -->
+        <div class="scroll-progress-line" id="scrollProgressLine"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <!-- Autoplay Video Background -->
+        <div class="video-background-container" id="videoBgContainer">
+            <div id="youtubePlayer"></div>
+        </div>
+        
+        <!-- Alternate Cinematic Image Slideshow (Fallback & Parallax layers) -->
+        <div class="hero-slideshow" id="heroSlideshow">
+            <div class="slide active" style="background-image: linear-gradient(rgba(17,30,26,0.5), rgba(17,30,26,0.85)), url('https://whitefeatherresort.com/silvassa/images/kauncha-lake-view-cottage.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(17,30,26,0.5), rgba(17,30,26,0.85)), url('https://whitefeatherresort.com/silvassa/images/kauncha-lake-view-delux-tent.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(17,30,26,0.5), rgba(17,30,26,0.85)), url('https://whitefeatherresort.com/silvassa/images/kauncha-garden-view-delux-tent.jpg');"></div>
+            <div class="slide" style="background-image: linear-gradient(rgba(17,30,26,0.5), rgba(17,30,26,0.85)), url('https://whitefeatherresort.com/silvassa/images/silvassa-gallery/6.jpg');"></div>
+        </div>
+
+        <!-- Canvas for Cinematic Ambient Particles & Light Rays -->
+        <canvas id="heroParticles"></canvas>
+
+        <!-- Glassmorphism Hero Overlay Content -->
+        <div class="hero-content-wrapper">
+            <div class="container">
+                <div class="hero-card" id="heroCard">
+                    <span class="hero-tagline-accent"><i class="fa-solid fa-feather-pointed"></i> Luxury Glamping Like Never Before</span>
+                    
+                    <!-- Large Headline styled for Letter Entrance Reveal -->
+                    <h1 class="hero-title split-text" id="heroHeadline">
+                        Luxury Glamping Like Never Before
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Experience unforgettable lakeside stays surrounded by forests, luxury tents, fine dining and breathtaking nature.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-gold ripple magnetic" data-dist="20"><i class="fa-solid fa-calendar-check"></i> Book Now</a>
+                        <a href="#about" class="btn btn-outline-white ripple magnetic" data-dist="20"><i class="fa-solid fa-compass"></i> Explore Resort</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mouse Scroll Down Indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <span class="indicator-text">Discover More</span>
+        </a>
+        
+        <!-- Organic curved wave divider -->
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Narratives & Storytelling -->
+    <section id="about" class="section-padding warm-beige-section">
+        <div class="container">
+            <div class="grid-2col align-center">
+                <div class="about-images-wrapper reveal-mask">
+                    <div class="about-img-main-box">
+                        <!-- Real Photo of Resort Tent Setup -->
+                        <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/7.jpg" alt="White Feather Luxury Glamping Tent" class="about-img-main hover-spotlight" data-tilt loading="lazy">
+                        
+                        <!-- Floating secondary image showing pool -->
+                        <div class="about-img-floating" data-tilt data-tilt-max="15">
+                            <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/2.jpg" alt="Infinity Pool overlooking the Lake" loading="lazy">
+                        </div>
+                        
+                        <div class="experience-badge-luxury">
+                            <span class="badge-text-primary">AWARD</span>
+                            <span class="badge-text-secondary">WINNING</span>
+                            <span class="badge-text-accent">EST. 2020</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text-content">
+                    <span class="section-subtitle">The Story of White Feather</span>
+                    <h2 class="section-title cormorant-title">Where Wilderness Embraces Uncompromised Sophistication</h2>
+                    <p class="lead-text">Situated in the mystical landscape of Kauncha, Silvassa, right beside the majestic Dudhni Lake, lies a sanctuary that redefines glamping. We welcome you to a space where tall trees, calm waters, and luxury meet.</p>
+                    <p>Our philosophy is centered on slow travel and deep connection. Walk on pathways lined with wild lilies, dip into our emerald infinity pool that blends visually into the reservoir, and dine in a restaurant framing the sunset. Each moment at White Feather is crafted to offer guests an immersive luxury escape from the ordinary.</p>
+                    
+                    <!-- Counter Statistics Block -->
+                    <div class="about-stats-grid">
+                        <div class="about-stat-card">
+                            <span class="stat-number" data-target="886">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Happy Guests</span>
+                        </div>
+                        <div class="about-stat-card">
+                            <span class="stat-number" data-target="4.4">0.0</span><span class="stat-suffix">★</span>
+                            <span class="stat-label">Google Rating</span>
+                        </div>
+                        <div class="about-stat-card">
+                            <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Glamping Stays</span>
+                        </div>
+                        <div class="about-stat-card">
+                            <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label">Lakeside Views</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta-row">
+                        <a href="#rooms" class="btn btn-gold ripple magnetic" data-dist="20">Explore Stays</a>
+                        <a href="#experience" class="btn btn-text magnetic" data-dist="15">Explore Resort Experience <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodations Section -->
+    <section id="rooms" class="section-padding dark-forest-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle gold-text">Lakeside Sanctuaries</span>
+                <h2 class="section-title text-white cormorant-title">Curated Stays for True Comfort</h2>
+                <p class="section-description text-gray">Choose between our signature canvas glamping tents and wood-paneled cottages, each boasting high-end comfort and breathtaking scenery.</p>
+            </div>
+            
+            <div class="rooms-grid-premium">
+                <!-- stay card 1 -->
+                <div class="stay-card reveal-up" data-tilt>
+                    <div class="stay-img-box">
+                        <img src="https://whitefeatherresort.com/silvassa/images/kauncha-lake-view-cottage.jpg" alt="Lake View Luxury Tent" loading="lazy">
+                        <div class="stay-price-tag">₹6,499<span>/night</span></div>
+                    </div>
+                    <div class="stay-body">
+                        <span class="stay-category">Signature Glamping</span>
+                        <h3 class="stay-name">Lake View Luxury Tent</h3>
+                        <p class="stay-text">Rest directly on the banks of Dudhni Lake. A fully air-conditioned canvas space featuring custom wooden decks, modern furnishings, and panoramic lake views.</p>
+                        <div class="stay-amenities">
+                            <span><i class="fa-solid fa-maximize"></i> 320 sq ft</span>
+                            <span><i class="fa-solid fa-water"></i> Lake View</span>
+                            <span><i class="fa-solid fa-wind"></i> AC</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline-white btn-sm btn-block ripple">Reserve Stay</a>
+                    </div>
+                </div>
+
+                <!-- stay card 2 -->
+                <div class="stay-card reveal-up" data-tilt>
+                    <div class="stay-img-box">
+                        <img src="https://whitefeatherresort.com/silvassa/images/kauncha-lake-view-delux-tent.jpg" alt="Garden View Deluxe Tent" loading="lazy">
+                        <div class="stay-price-tag">₹5,499<span>/night</span></div>
+                    </div>
+                    <div class="stay-body">
+                        <span class="stay-category">Garden Retreat</span>
+                        <h3 class="stay-name">Garden View Deluxe Tent</h3>
+                        <p class="stay-text">Surrounded by manicured flower lawns and paths, these spacious tents feature private sit-out garden space, offering pure lakeside peace.</p>
+                        <div class="stay-amenities">
+                            <span><i class="fa-solid fa-maximize"></i> 300 sq ft</span>
+                            <span><i class="fa-solid fa-leaf"></i> Garden View</span>
+                            <span><i class="fa-solid fa-shower"></i> Ensuite</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline-white btn-sm btn-block ripple">Reserve Stay</a>
+                    </div>
+                </div>
+
+                <!-- stay card 3 -->
+                <div class="stay-card reveal-up" data-tilt>
+                    <div class="stay-img-box">
+                        <img src="https://whitefeatherresort.com/silvassa/images/garden-view-delux-tent.jpg" alt="Sahyadri Cottage" loading="lazy">
+                        <div class="stay-price-tag">₹7,499<span>/night</span></div>
+                    </div>
+                    <div class="stay-body">
+                        <span class="stay-category">Valley Lodge</span>
+                        <h3 class="stay-name">Sahyadri Cottage</h3>
+                        <p class="stay-text">Built with solid elements and beautiful wood panels. Facing the majestic Sahyadri hills, these premium cottages are ideal for private getaways.</p>
+                        <div class="stay-amenities">
+                            <span><i class="fa-solid fa-maximize"></i> 380 sq ft</span>
+                            <span><i class="fa-solid fa-mountain"></i> Hill View</span>
+                            <span><i class="fa-solid fa-tv"></i> LED TV</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline-white btn-sm btn-block ripple">Reserve Stay</a>
+                    </div>
+                </div>
+
+                <!-- stay card 4 -->
+                <div class="stay-card reveal-up" data-tilt>
+                    <div class="stay-img-box">
+                        <img src="https://whitefeatherresort.com/silvassa/images/dudhani-delux-cottage.jpg" alt="Dudhni Cottage" loading="lazy">
+                        <div class="stay-price-tag">₹8,999<span>/night</span></div>
+                    </div>
+                    <div class="stay-body">
+                        <span class="stay-category">Lakefront Luxury</span>
+                        <h3 class="stay-name">Dudhni Cottage</h3>
+                        <p class="stay-text">Our most premium cottage situated closest to the water. Floor-to-ceiling glass windows let you wake up directly facing the calm lake currents.</p>
+                        <div class="stay-amenities">
+                            <span><i class="fa-solid fa-maximize"></i> 420 sq ft</span>
+                            <span><i class="fa-solid fa-water"></i> Waterfront</span>
+                            <span><i class="fa-solid fa-mug-hot"></i> Coffee Maker</span>
+                        </div>
+                        <a href="#contact" class="btn btn-outline-white btn-sm btn-block ripple">Reserve Stay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resort Experience (GSAP Horizontal Scrolling Panels) -->
+    <section id="experience" class="horizontal-scroll-section-wrapper">
+        <div id="experience-scroll-wrapper">
+            <div class="horizontal-scroll-header-sticky">
+                <div class="container">
+                    <span class="section-subtitle gold-text">IMMERSE YOURSELF</span>
+                    <h2 class="section-title text-white cormorant-title">The White Feather Experience</h2>
+                </div>
+            </div>
+            
+            <div id="experience-horizontal-container">
+                <!-- Panel 1 -->
+                <div class="experience-panel" style="background-image: linear-gradient(rgba(17,30,26,0.65), rgba(17,30,26,0.9)), url('https://whitefeatherresort.com/silvassa/images/silvassa-gallery/1.jpg');">
+                    <div class="panel-content">
+                        <span class="panel-tag">01 / MORNING VIEW</span>
+                        <h3 class="panel-title-text">Greet the Sunrise Over Dudhni Lake</h3>
+                        <p class="panel-desc">Wake up to gentle lakeside mist and golden sunlight coloring the surrounding forests. Greet nature at its most peaceful state.</p>
+                    </div>
+                </div>
+                
+                <!-- Panel 2 -->
+                <div class="experience-panel" style="background-image: linear-gradient(rgba(17,30,26,0.65), rgba(17,30,26,0.9)), url('https://whitefeatherresort.com/silvassa/images/kauncha-lake-view-cottage.jpg');">
+                    <div class="panel-content">
+                        <span class="panel-tag">02 / LUXURY STAY</span>
+                        <h3 class="panel-title-text">A Sanctuary Under Premium Canvas</h3>
+                        <p class="panel-desc">Step inside our fully air-conditioned glamping tents. Premium wooden structures, local decorations, and plush beds create an elegant haven.</p>
+                    </div>
+                </div>
+                
+                <!-- Panel 3 -->
+                <div class="experience-panel" style="background-image: linear-gradient(rgba(17,30,26,0.65), rgba(17,30,26,0.9)), url('https://whitefeatherresort.com/silvassa/images/silvassa-gallery/2.jpg');">
+                    <div class="panel-content">
+                        <span class="panel-tag">03 / SWIMMING POOL</span>
+                        <h3 class="panel-title-text">Dive Into Endless Emerald Waters</h3>
+                        <p class="panel-desc">Float under the sky in our infinity pool. Visual borders melt into the river, creating a seamless connection with Kauncha's waterways.</p>
+                    </div>
+                </div>
+                
+                <!-- Panel 4 -->
+                <div class="experience-panel" style="background-image: linear-gradient(rgba(17,30,26,0.65), rgba(17,30,26,0.9)), url('https://whitefeatherresort.com/silvassa/images/silvassa-gallery/4.jpg');">
+                    <div class="panel-content">
+                        <span class="panel-tag">04 / dining</span>
+                        <h3 class="panel-title-text">Epicurean Lakeside Delights</h3>
+                        <p class="panel-desc">Taste local specialties and fresh barbecued grills, prepared with local herbs in our scenic lakeview restaurant.</p>
+                    </div>
+                </div>
+                
+                <!-- Panel 5 -->
+                <div class="experience-panel" style="background-image: linear-gradient(rgba(17,30,26,0.65), rgba(17,30,26,0.9)), url('https://whitefeatherresort.com/silvassa/images/silvassa-gallery/11.jpg');">
+                    <div class="panel-content">
+                        <span class="panel-tag">05 / NATURE WALK</span>
+                        <h3 class="panel-title-text">Walk Paths of Forest Whispers</h3>
+                        <p class="panel-desc">Explore stone-paved walkways and flower beds under forest canopies. Discover the rich flora and fauna of Dadra and Nagar Haveli.</p>
+                    </div>
+                </div>
+                
+                <!-- Panel 6 -->
+                <div class="experience-panel" style="background-image: linear-gradient(rgba(17,30,26,0.65), rgba(17,30,26,0.9)), url('https://whitefeatherresort.com/silvassa/images/silvassa-gallery/14.jpg');">
+                    <div class="panel-content">
+                        <span class="panel-tag">06 / BONFIRE NIGHT</span>
+                        <h3 class="panel-title-text">Fireside Music Under Starry Skies</h3>
+                        <p class="panel-desc">As dusk falls, gather around the crackling bonfire. Enjoy soft acoustic guitar notes, local folklore, and cool lake breezes.</p>
+                    </div>
+                </div>
+                
+                <!-- Panel 7 -->
+                <div class="experience-panel" style="background-image: linear-gradient(rgba(17,30,26,0.65), rgba(17,30,26,0.9)), url('https://whitefeatherresort.com/silvassa/images/silvassa-gallery/10.jpg');">
+                    <div class="panel-content">
+                        <span class="panel-tag">07 / FAMILY TIME</span>
+                        <h3 class="panel-title-text">Cherishing Breathtaking Moments</h3>
+                        <p class="panel-desc">Play indoor board games, plan lake picnics, or capture scenic family portraits at our premium photoshoot lawns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Grid (Luxury Glass Cards) -->
+    <section id="amenities" class="section-padding warm-beige-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Comfort Redefined</span>
+                <h2 class="section-title cormorant-title">Curated Comforts for a Flawless Stay</h2>
+                <p class="section-description">Our amenities are designed to bridge the gap between wilderness and upscale hotel hospitality.</p>
+            </div>
+            
+            <div class="amenities-grid-luxury">
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-wifi"></i></div>
+                    <h3 class="amenity-title">High-Speed WiFi</h3>
+                    <p class="amenity-desc">Stay connected to the world with high-speed internet available across our tents and reception area.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-mug-hot"></i></div>
+                    <h3 class="amenity-title">Breakfast Buffet</h3>
+                    <p class="amenity-desc">Begin your morning with a complimentary hot breakfast buffet featuring local and global cuisines.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-square-parking"></i></div>
+                    <h3 class="amenity-title">Secure Parking</h3>
+                    <p class="amenity-desc">Ample, secure parking spaces directly inside the resort premises for your road-trip vehicles.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-person-swimming"></i></div>
+                    <h3 class="amenity-title">Infinity Pool</h3>
+                    <p class="amenity-desc">Soak in panoramic lake views while relaxing in the clear waters of our beautiful infinity pool.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-utensils"></i></div>
+                    <h3 class="amenity-title">Lakeview Dining</h3>
+                    <p class="amenity-desc">Dine under wood beams at our in-house multi-cuisine restaurant specializing in local tribal dishes.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-snowflake"></i></div>
+                    <h3 class="amenity-title">Air Conditioning</h3>
+                    <p class="amenity-desc">Escape the tropical summer heat with powerful split AC units standard in all glamping tents.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-seedling"></i></div>
+                    <h3 class="amenity-title">Manicured Gardens</h3>
+                    <p class="amenity-desc">Stroll along manicured stone paths surrounded by seasonal flowers and lush foliage.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-fire"></i></div>
+                    <h3 class="amenity-title">Evening Bonfires</h3>
+                    <p class="amenity-desc">Gather under the dark skies around warm bonfires with acoustic music every weekend.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-child-reaching"></i></div>
+                    <h3 class="amenity-title">Kids Play Zone</h3>
+                    <p class="amenity-desc">A safe, grassy playground complete with outdoor swings and slides for younger travelers.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-bell-concierge"></i></div>
+                    <h3 class="amenity-title">Room Service</h3>
+                    <p class="amenity-desc">Order hot meals, evening tea, or drinks directly to your tent deck for total privacy.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-camera"></i></div>
+                    <h3 class="amenity-title">Instagram Spots</h3>
+                    <p class="amenity-desc">Beautifully styled garden arches and lakeside viewpoints perfect for your travel feeds.</p>
+                </div>
+                <div class="amenity-card-glass reveal-up">
+                    <div class="amenity-icon-luxury"><i class="fa-solid fa-mountain-sun"></i></div>
+                    <h3 class="amenity-title">Lakeside Views</h3>
+                    <p class="amenity-desc">Watch local fishermen, spectacular sunrises, and moonlight reflections over Dudhni Lake.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining & Culinary Section -->
+    <section id="dining" class="section-padding dark-forest-section">
+        <div class="container">
+            <div class="grid-2col align-center">
+                <div class="dining-narrative reveal-left">
+                    <span class="section-subtitle gold-text">A Taste of the Wilderness</span>
+                    <h2 class="section-title text-white cormorant-title">Culinary Craftsmanship by the Lakeside</h2>
+                    <p class="lead-text text-gray">Savor the authentic flavors of the region mixed with premium global culinary arts. Dining at White Feather is designed as a sensory experience under the stars.</p>
+                    <p class="text-gray">Our chefs use local organic herbs and fresh lake-catch fish to cook signature regional tribal delicacies. Dine on the open-air wooden deck as cool lake breezes sweep past, or organize cozy group barbecues beside the bonfire.</p>
+                    
+                    <div class="dining-menu-list">
+                        <div class="menu-item-premium">
+                            <div class="menu-item-header">
+                                <span class="menu-item-name">Authentic Local Cuisine</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">Signature</span>
+                            </div>
+                            <p class="menu-item-desc">Traditional tribal herbs, local rice flatbreads, and slow-cooked river fish curry.</p>
+                        </div>
+                        <div class="menu-item-premium">
+                            <div class="menu-item-header">
+                                <span class="menu-item-name">Lakeside Grill & Barbecue</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">Live Desk</span>
+                            </div>
+                            <p class="menu-item-desc">Marinated paneer skewers, tandoori grills, and roasted vegetables cooked live over coal embers.</p>
+                        </div>
+                        <div class="menu-item-premium">
+                            <div class="menu-item-header">
+                                <span class="menu-item-name">Breakfast Buffet Spread</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">Complimentary</span>
+                            </div>
+                            <p class="menu-item-desc">Freshly baked pastries, local hot breakfast dishes, fruit cuts, and regional teas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dining-images-grid reveal-right">
+                    <!-- Large food photography -->
+                    <div class="dining-main-img-box" data-tilt>
+                        <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/15.jpg" alt="White Feather Resort Buffet Breakfast Food" class="dining-img-1" loading="lazy">
+                        <div class="dining-overlay-tag">Local Organic Herbs</div>
+                    </div>
+                    <div class="chef-badge-card">
+                        <div class="chef-badge-icon"><i class="fa-solid fa-utensils"></i></div>
+                        <div class="chef-badge-text">
+                            <h4>Master Chef Kitchen</h4>
+                            <p>Organic Ingredients Only</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Gallery Section (Masonry + Filter) -->
+    <section id="gallery" class="section-padding warm-beige-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Visual Journey</span>
+                <h2 class="section-title cormorant-title">Inside the Resort Gates</h2>
+                <p class="section-description">A curated look at actual corners of our glamping tents, lakefront docks, events, and gardens.</p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="gallery-filters-premium">
+                <button class="filter-btn-premium active" data-filter="all">All Viewports</button>
+                <button class="filter-btn-premium" data-filter="rooms">Rooms & Cottages</button>
+                <button class="filter-btn-premium" data-filter="lake">Lake & Jetty</button>
+                <button class="filter-btn-premium" data-filter="pool">Infinity Pool</button>
+                <button class="filter-btn-premium" data-filter="dining">Restaurant</button>
+                <button class="filter-btn-premium" data-filter="garden">Forest Gardens</button>
+                <button class="filter-btn-premium" data-filter="bonfire">Bonfire Night</button>
+            </div>
+
+            <!-- Masonry Pinterest Grid -->
+            <div class="gallery-masonry-pinterest" id="pinterestGrid">
+                <!-- 1 -->
+                <div class="gallery-pinterest-item" data-category="lake bonfire">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/1.jpg" alt="Lakeside evening scenery" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Lakeside Evening Scenery</span>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="gallery-pinterest-item" data-category="pool garden">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/2.jpg" alt="Emerald infinity pool" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Emerald Infinity Pool</span>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="gallery-pinterest-item" data-category="rooms">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/3.jpg" alt="Glamping tent exterior" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Luxury Tent Frontage</span>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="gallery-pinterest-item" data-category="dining">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/4.jpg" alt="Resort dining setup" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Open Air Restaurant</span>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="gallery-pinterest-item" data-category="garden rooms">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/5.jpg" alt="Garden paths by tents" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Stone Walkways</span>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="gallery-pinterest-item" data-category="rooms bonfire">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/6.jpg" alt="Tents illuminated at night" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Magical Night Lighting</span>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="gallery-pinterest-item" data-category="rooms garden">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/7.jpg" alt="Glamping tents alignment" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Premium Glamping Setup</span>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="gallery-pinterest-item" data-category="lake">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/8.jpg" alt="Boating jetty" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Resort Jetty Point</span>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="gallery-pinterest-item" data-category="dining">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/9.jpg" alt="Reception interior lobby" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Lobby Reception</span>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="gallery-pinterest-item" data-category="garden">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/10.jpg" alt="Wedding lawn setups" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Event Lawns</span>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="gallery-pinterest-item" data-category="garden">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/11.jpg" alt="Manicured stone pathways" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Green Walkways</span>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="gallery-pinterest-item" data-category="pool bonfire">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/12.jpg" alt="Pool at night" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Poolside Night View</span>
+                    </div>
+                </div>
+                <!-- 13 -->
+                <div class="gallery-pinterest-item" data-category="rooms">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/13.jpg" alt="Luxury tent interior design" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Tent Interior View</span>
+                    </div>
+                </div>
+                <!-- 14 -->
+                <div class="gallery-pinterest-item" data-category="bonfire lake">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/14.jpg" alt="Lakeside bonfire setups" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Bonfire Fireside</span>
+                    </div>
+                </div>
+                <!-- 15 -->
+                <div class="gallery-pinterest-item" data-category="dining">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/15.jpg" alt="Breakfast buffet food items" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Buffet Cooking</span>
+                    </div>
+                </div>
+                <!-- 16 -->
+                <div class="gallery-pinterest-item" data-category="lake bonfire">
+                    <img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/16.jpg" alt="Moonlight reflection on reservoir" loading="lazy">
+                    <div class="pinterest-item-details">
+                        <span>Lakeside Moonlight Reflection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Testimonials & Google Reviews -->
+    <section id="reviews" class="section-padding dark-forest-section">
+        <div class="container">
+            <div class="grid-2col align-center">
+                <div class="reviews-summary-card-luxury reveal-left">
+                    <span class="reviews-accent-gold"><i class="fa-brands fa-google text-gold"></i> Google Ratings Summary</span>
+                    <h2 class="reviews-title-text text-white cormorant-title">What Our Guests Say</h2>
+                    
+                    <div class="rating-display-luxury">
+                        <span class="rating-number-gold">4.4</span>
+                        <div class="rating-stars-gold">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    
+                    <p class="verified-reviews-sub">Based on <strong>886+ verified local reviews</strong> on Google Maps.</p>
+                    <p class="reviews-tagline text-gray">Quiet lakeside walks, cleanly maintained AC tents, delicious fresh food, and hospitable staff are frequently praised in guest reviews.</p>
+                    <a href="https://search.google.com/local/reviews?placeid=ChIJ8_Wp9e9m5zsR25a07jI3zQ8" target="_blank" rel="noopener" class="btn btn-gold ripple magnetic" data-dist="20"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Google Reviews</a>
+                </div>
+                
+                <!-- Testimonials Auto Slider -->
+                <div class="testimonials-slider-box reveal-right">
+                    <div class="testimonial-glass-card active">
+                        <div class="quote-symbol-gold"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-body-text">"Wonderful experience. The resort is right in front of Dudhni Lake. Staying in the glamping tents is clean, comfortable, and luxurious. The food at the restaurant was delicious, and the staff made sure we had everything we needed. Highly recommended for couples!"</p>
+                        <div class="author-info-luxury">
+                            <div class="author-avatar-badge"><i class="fa-solid fa-user-tie"></i></div>
+                            <div class="author-meta-box">
+                                <span class="author-name-text">Aniket Patel</span>
+                                <span class="author-title-text"><i class="fa-solid fa-circle-check text-gold"></i> Verified Local Guide</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-glass-card">
+                        <div class="quote-symbol-gold"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-body-text">"The view of the lake from the rooms is stunning. Very quiet and peaceful place. Swimming pool is well maintained. The bonfire evening with light music made our stay very memorable. Best destination getaway near Surat."</p>
+                        <div class="author-info-luxury">
+                            <div class="author-avatar-badge"><i class="fa-solid fa-user-astronaut"></i></div>
+                            <div class="author-meta-box">
+                                <span class="author-name-text">Sneha Kulkarni</span>
+                                <span class="author-title-text"><i class="fa-solid fa-circle-check text-gold"></i> Verified Guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-glass-card">
+                        <div class="quote-symbol-gold"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-body-text">"White Feather is a true gem in Silvassa. The cottages are luxurious, and the surrounding nature is beautifully kept. We did boating at the lake right next to the resort. Perfect weekend trip for family."</p>
+                        <div class="author-info-luxury">
+                            <div class="author-avatar-badge"><i class="fa-solid fa-user-ninja"></i></div>
+                            <div class="author-meta-box">
+                                <span class="author-name-text">Rajesh Mehta</span>
+                                <span class="author-title-text"><i class="fa-solid fa-circle-check text-gold"></i> Verified Corporate Guest</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-nav-controls">
+                        <button class="slider-btn-luxury prev-review-btn" aria-label="Previous Testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="slider-btn-luxury next-review-btn" aria-label="Next Testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Booking Widget & Contact Layout -->
+    <section id="contact" class="section-padding warm-beige-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Plan Your Stay</span>
+                <h2 class="section-title cormorant-title">Reach Out to our Reservations</h2>
+                <p class="section-description">Verify availability for private cottage stays and corporate group reservations directly with our hotel office.</p>
+            </div>
+            
+            <div class="grid-2col contact-layout-premium">
+                <!-- Contact info panel -->
+                <div class="contact-details-premium reveal-left">
+                    <div class="contact-info-glass-box">
+                        <h3 class="contact-box-title">White Feather Front Desk</h3>
+                        
+                        <div class="contact-item-box">
+                            <div class="contact-item-icon-gold"><i class="fa-solid fa-map-pin"></i></div>
+                            <div class="contact-item-content">
+                                <h4>Resort Address</h4>
+                                <p>Tourist complex 55/P, Jetty Road, Kauncha, Dudhni, Silvassa, Dadra and Nagar Haveli - 396230</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item-box">
+                            <div class="contact-item-icon-gold"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="contact-item-content">
+                                <h4>Reservation Numbers</h4>
+                                <p><a href="tel:+918980097755">+91 89800 97755</a></p>
+                                <p><a href="tel:+919099897755">+91 90998 97755</a> (Groups & Corporate)</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-box">
+                            <div class="contact-item-icon-gold"><i class="fa-solid fa-envelope-open-text"></i></div>
+                            <div class="contact-item-content">
+                                <h4>Reservations Email</h4>
+                                <p><a href="mailto:booking.kauncha@whitefeatherresort.com">booking.kauncha@whitefeatherresort.com</a></p>
+                                <p><a href="mailto:gm.dudhni@kinsfolkgroup.com">gm.dudhni@kinsfolkgroup.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-actions-row">
+                            <a href="https://maps.google.com/?q=White+Feather+Glamping+Tent+Resort+Kauncha+Silvassa" target="_blank" rel="noopener" class="btn btn-gold btn-sm magnetic" data-dist="15"><i class="fa-solid fa-diamond-turn-right"></i> Navigate Map</a>
+                            <a href="tel:+918980097755" class="btn btn-outline-white btn-sm magnetic" data-dist="15"><i class="fa-solid fa-phone"></i> Call Frontdesk</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating Glass Booking Widget -->
+                <div class="booking-widget-premium reveal-right">
+                    <form class="booking-glass-form" id="premiumBookingForm" onsubmit="event.preventDefault(); alert('Inquiry Sent! Our reservation executive will contact you via phone within 2 hours.'); this.reset();">
+                        <h3 class="booking-form-heading">Send Stay Inquiry</h3>
+                        
+                        <div class="booking-field-row">
+                            <div class="booking-field-group">
+                                <label for="checkin">Check-in</label>
+                                <input type="date" id="checkin" required>
+                            </div>
+                            <div class="booking-field-group">
+                                <label for="checkout">Check-out</label>
+                                <input type="date" id="checkout" required>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-field-row">
+                            <div class="booking-field-group">
+                                <label for="adultCount">Adults</label>
+                                <select id="adultCount" required>
+                                    <option value="1">1 Adult</option>
+                                    <option value="2" selected>2 Adults</option>
+                                    <option value="3">3 Adults</option>
+                                    <option value="4+">4+ Adults</option>
+                                </select>
+                            </div>
+                            <div class="booking-field-group">
+                                <label for="childCount">Children</label>
+                                <select id="childCount">
+                                    <option value="0" selected>0 Children</option>
+                                    <option value="1">1 Child</option>
+                                    <option value="2">2 Children</option>
+                                    <option value="3+">3+ Children</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="booking-field-group">
+                            <label for="accommodationType">Stay Option</label>
+                            <select id="accommodationType" required>
+                                <option value="" disabled selected>Select Room Class</option>
+                                <option value="luxury-tent">Lake View Luxury Tent</option>
+                                <option value="garden-tent">Garden View Deluxe Tent</option>
+                                <option value="sahyadri-cottage">Sahyadri Cottage</option>
+                                <option value="dudhni-cottage">Dudhni Cottage</option>
+                            </select>
+                        </div>
+                        
+                        <div class="booking-field-group">
+                            <label for="specialRequests">Special Requests (Optional)</label>
+                            <textarea id="specialRequests" rows="2" placeholder="e.g. lakeside dinner set-up, corporate package details..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold btn-block ripple magnetic" data-dist="20"><i class="fa-solid fa-paper-plane"></i> Send Availability Request</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Dark Maps Embed container -->
+            <div class="map-iframe-container reveal-up">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.1378872659616!2d73.0116664!3d20.1283333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be066efd5a9f5f3%3A0xfa9dc732ee3496db!2sWhiteFeather%20Glamping%20Tents%20Resort!5e0!3m2!1sen!2sin!4v1688461525412!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade" 
+                    title="Google Map showing White Feather Resort Location in Kauncha Silvassa"
+                    id="resortMap">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Large Premium Footer -->
+    <footer id="main-footer">
+        <div class="container footer-content-grid-luxury">
+            <!-- Col 1 -->
+            <div class="footer-brand-luxury">
+                <h3 class="footer-brand-title-gold">WHITE FEATHER</h3>
+                <p class="footer-brand-tagline-luxury">GLAMPING RESORT</p>
+                <p class="footer-desc-luxury">A world-class lakefront glamping experience centered in Kauncha, Silvassa. Experience organic architecture, infinity pools, and local organic cuisines.</p>
+                
+                <div class="footer-social-circle-row">
+                    <a href="#" class="social-circle magnetic" data-dist="8" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-circle magnetic" data-dist="8" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-circle magnetic" data-dist="8" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <!-- Col 2 -->
+            <div class="footer-links-luxury">
+                <h4 class="footer-title-gold">Quick Navigation</h4>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right text-gold"></i> Home Page</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-chevron-right text-gold"></i> Narrative Story</a></li>
+                    <li><a href="#rooms"><i class="fa-solid fa-chevron-right text-gold"></i> Lakeside Stays</a></li>
+                    <li><a href="#experience"><i class="fa-solid fa-chevron-right text-gold"></i> Resort Experience</a></li>
+                    <li><a href="#amenities"><i class="fa-solid fa-chevron-right text-gold"></i> Amenities</a></li>
+                    <li><a href="#dining"><i class="fa-solid fa-chevron-right text-gold"></i> Dining Showcase</a></li>
+                    <li><a href="#gallery"><i class="fa-solid fa-chevron-right text-gold"></i> Photo Gallery</a></li>
+                </ul>
+            </div>
+            
+            <!-- Col 3 -->
+            <div class="footer-newsletter-luxury">
+                <h4 class="footer-title-gold">Newsletter subscription</h4>
+                <p class="newsletter-sub-text">Subscribe to receive seasonal glamping offers, local festival schedules, and retreat slots.</p>
+                <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn btn-gold btn-sm"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Instagram Feed Block (Mocked Awwwards layout) -->
+        <div class="footer-insta-strip">
+            <div class="container">
+                <h4 class="footer-title-gold text-center">Lakeside Snapshots (@whitefeatherresort)</h4>
+                <div class="insta-images-row">
+                    <a href="#gallery" class="insta-img-box"><img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/1.jpg" alt="Lakeside Evening view" loading="lazy"></a>
+                    <a href="#gallery" class="insta-img-box"><img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/2.jpg" alt="Pool" loading="lazy"></a>
+                    <a href="#gallery" class="insta-img-box"><img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/3.jpg" alt="Tent" loading="lazy"></a>
+                    <a href="#gallery" class="insta-img-box"><img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/4.jpg" alt="Restaurant" loading="lazy"></a>
+                    <a href="#gallery" class="insta-img-box"><img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/5.jpg" alt="Garden paths" loading="lazy"></a>
+                    <a href="#gallery" class="insta-img-box"><img src="https://whitefeatherresort.com/silvassa/images/silvassa-gallery/6.jpg" alt="Bonfire" loading="lazy"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom-luxury">
+            <div class="container bottom-flex-luxury">
+                <p>&copy; 2026 White Feather Glamping Tents Resort. All Rights Reserved.</p>
+                <p>Designed with Luxury | Centered at Kauncha, Silvassa</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal Lightbox Overlay -->
+    <div id="videoLightbox" class="lightbox-modal">
+        <span class="close-lightbox" id="closeVideoLightbox">&times;</span>
+        <div class="lightbox-content-wrapper">
+            <iframe id="lightboxIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal Overlay -->
+    <div id="imageLightbox" class="lightbox-modal">
+        <span class="close-lightbox" id="closeImageLightbox">&times;</span>
+        <div class="image-lightbox-container">
+            <img id="lightboxImage" src="" alt="Resort Close Up">
+            <div id="lightboxCaption" class="lightbox-caption">Lakeside Luxury</div>
+            <button class="nav-lightbox-btn prev-image" id="prevLightboxImage" aria-label="Previous Image"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="nav-lightbox-btn next-image" id="nextLightboxImage" aria-label="Next Image"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/919099897755?text=Hi!%20I'm%20interested%20in%20booking%20a%20stay%20at%20White%20Feather%20Glamping%20Resort%20Silvassa." target="_blank" rel="noopener" class="whatsapp-floating-widget" aria-label="Book Stay on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with Reservations</span>
+    </a>
+
+    <!-- Lenis Scroll (Smooth scroll engine) -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    
+    <!-- GSAP (GreenSock Animation Platform) + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Core Application Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
