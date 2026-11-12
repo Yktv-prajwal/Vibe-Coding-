@@ -1,28 +1,64 @@
-# Vibe-Coding-
-Vibe Coding Using Antigravity And Claud 
 
-Walkthrough: Prajwal Kumbhar's Portfolio Website
-I have successfully updated the website's color design to the ultra-premium Minimalist Slate & Silver theme that you selected!
+# 🚀 Prajwal Kumbhar's Portfolio Website
 
-Slate & Silver Monochromatic Theme Implementation
-Variables & Design Tokens:
+A modern, responsive personal portfolio website built using **HTML, CSS, and JavaScript**, featuring a premium Minimalist Slate & Silver design.
 
-Reconfigured style.css with a dark slate background, graphite cards, and metallic silver accents for the dark theme.
-Updated the light theme to a soft slate-100 background with dark slate graphite text and variables.
-Unified Silver Glow Hover Effects:
+## ✨ Overview
 
-Simplified the skill card hovers: all cards now glow in a matching silver/slate shadow when hovered, which unifies the design.
-Monochromatic Progress Bars & Icons:
+This portfolio showcases my profile, technical skills, academic journey, projects, resume, and certifications through a clean and sophisticated user interface.
 
-Re-styled the skill card icons to clean gray/silver backgrounds, and progress bars now fill with a silver-to-slate gradient, completing the sophisticated monochromatic graphite aesthetic.
-Matched Glitch Background:
+## 🎨 Design – Minimalist Slate & Silver
 
-Updated the LetterGlitch code rain colors in script.js to shades of slate and graphite. It now renders as a subtle, slate-colored code stream watermark behind the text, matching the theme.
-Created Files & Structure
-All files are located in the workspace directory c:\Users\Prajawal\OneDrive\Desktop\Portfolio:
+- Premium dark slate and graphite theme.
+- Soft silver accents and glow effects.
+- Minimalist light theme.
+- Smooth transitions and hover animations.
+- Responsive design for different screen sizes.
+- Slate-colored LetterGlitch background animation.
 
-index.html: Main layout containing your profile details, updated stats cards, academic timeline, and downloadable certificate cards.
-style.css: Modern design styling with responsive layouts, hover glows, download indicators, and scroll-reveal transitions.
-script.js: Holds the dynamic features including typing effect loops, responsive menus, back-to-top buttons, the LetterGlitch matrix rain generator, scroll-triggers, and the 3D card tilt script.
-resume.pdf: Mock CV placeholder for the download link.
-assets/certificates/: Contains the 5 official PDF certificates.
+## ⚡ Features
+
+- Interactive typing animation.
+- Responsive navigation menu.
+- Animated skill cards and progress bars.
+- Scroll reveal animations.
+- 3D card tilt effects.
+- Back-to-top button.
+- Downloadable resume.
+- Downloadable certificate PDFs.
+- Dark and light theme styling.
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Google Antigravity
+- Claude AI
+
+## 🚀 Getting Started
+
+1. Clone this repository:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+2. Open the project folder.
+3. Open `index.html` in your browser.
+4. Explore the portfolio.
+
+## 👨‍💻 About Me
+
+I'm Prajwal Kumbhar, a Third-Year B.E. Artificial Intelligence and Machine Learning student passionate about:
+
+- Artificial Intelligence
+- Machine Learning
+- Data Science
+- Web Development
+- Emerging Technologies
+
+## 📬 Connect With Me
+
+- **GitHub:** [Yktv-prajwal](https://github.com/Yktv-prajwal)
+- **LinkedIn:** [Prajwal Kumbhar](https://www.linkedin.com/in/prajwal-kumbhar-2b949a398/)
